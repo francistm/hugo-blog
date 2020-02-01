@@ -6,17 +6,15 @@
 </div>
 
 <ul class="nav">
-  {{ $current := .Permalink | absLangURL }}
+  {{ $current := . }}
   {{ range .Site.Menus.main }}
-    {{$actived := "false"}}
-      <!-- A problem caused by slash: if you use "eq" directly, you will get a result of "/tags/" and "/tags" -->
-      {{if hasPrefix  $current (.URL|absLangURL)}}
-        {{$actived = "active"}}
-      {{end}}
-      <li>  
-        <a class="{{$actived}}" href="{{ .URL }}">
-          {{ .Name }}
-        </a>
-      </li>
+    {{ if $current.IsMenuCurrent "main" . }}
+      <li class="active">
+    {{ else }}
+      <li>
+    {{ end }}
+
+      <a href="{{ .URL }}">{{ .Name }}</a>
+    </li>
   {{ end }}
 </ul>

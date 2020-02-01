@@ -13,11 +13,11 @@ theme = ["Stridsvagn"]
   [[menu.main]]
     weight = 2
     name = "日志归档"
-    url = "/entries"
+    url = "/entries/"
     identifier = "entries"
 
   [[menu.main]]
     weight = 3
     name = "友情链接"
-    url = "/links"
+    url = "/links/"
     identifier = "links"
