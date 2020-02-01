@@ -1,0 +1,22 @@
+<div id="logo">
+  {{ $logoUrl := resources.Get "images/logo.png" | fingerprint }}
+  <a href="{{.Site.BaseURL}}">
+    <img src="{{ $logoUrl.Permalink }}" integrity="{{ $logoUrl.Data.Integrity }}" alt="{{ .Site.Title }}" />
+  </a>
+</div>
+
+<ul class="nav">
+  {{ $current := .Permalink | absLangURL }}
+  {{ range .Site.Menus.main }}
+    {{$actived := "false"}}
+      <!-- A problem caused by slash: if you use "eq" directly, you will get a result of "/tags/" and "/tags" -->
+      {{if hasPrefix  $current (.URL|absLangURL)}}
+        {{$actived = "active"}}
+      {{end}}
+      <li>  
+        <a class="{{$actived}}" href="{{ .URL }}">
+          {{ .Name }}
+        </a>
+      </li>
+  {{ end }}
+</ul>

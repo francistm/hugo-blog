@@ -1,0 +1,23 @@
+baseURL = "http://blog.francistm.com"
+languageCode = "zh-CN"
+title = "Francis' Blog"
+theme = ["Stridsvagn"]
+
+[menu]
+  [[menu.main]]
+    weight = 1
+    name = "首页"
+    url = "/"
+    identifier = "home"
+
+  [[menu.main]]
+    weight = 2
+    name = "日志归档"
+    url = "/entries"
+    identifier = "entries"
+
+  [[menu.main]]
+    weight = 3
+    name = "友情链接"
+    url = "/links"
+    identifier = "links"

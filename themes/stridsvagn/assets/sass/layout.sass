@@ -1,0 +1,122 @@
+$blue: #428bca
+
+a
+  color: $blue
+  text-decoration: none
+
+.clearfix
+  display: block
+
+  &::after
+    height: 0
+    clear: both
+    content: " "
+    display: block
+
+.pull-left
+  float: left
+
+.pull-right
+  float: right
+
+.container
+  width: 960px
+  margin: 0 auto
+  padding: 20px 0
+  box-sizing: border-box
+
+nav
+  width: 180 / 960 * 100%
+
+  ul.nav
+    padding: 0
+    margin-top: 20px
+    padding-right: 30px
+    @extend .clearfix
+
+    li
+      font-size: 14px
+      list-style: none
+      margin: 10px auto
+      text-align: right
+
+main
+  width: 770 / 960 * 100%
+
+  ul.link-list, ul.post-list
+    padding: 0
+    @extend .clearfix
+
+  li.link-list-item, li.post-list-item
+    display: block
+    list-style: none
+    margin: 10px auto
+
+    a
+      display: block
+      font-size: 14px
+
+  li.link-list-item
+    .link-description
+      color: #999
+      padding-left: 25px
+
+article
+  p
+    font-size: 14px
+    line-height: 30px
+
+  ul, ol
+    font-size: 14px
+
+  pre, code
+    margin: 0
+    padding: 0
+    font-size: 14px
+    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace
+
+  .page-meta
+    color: gray
+    font-size: 12px
+    text-align: right
+
+  .page-title
+    margin-top: 0
+
+  .highlight
+    padding: 10px
+
+@media screen and (max-width: 960px)
+  .container
+    width: 100%
+    padding: 20px 10px 50px 10px
+
+  nav.pull-left
+    float: none
+    width: 100%
+
+    #logo
+      text-align: center
+
+    ul.nav
+      padding: 0
+
+      li
+        margin: 0
+        float: left
+        font-size: 14px
+        text-align: center
+        width: 1 / 3 * 100%
+
+  main.pull-right
+    float: none
+    width: 100%
+
+  article
+    .page-title
+      text-align: center
+
+    .content.markdown img
+      width: 100%
+      height: auto
+      display: block
