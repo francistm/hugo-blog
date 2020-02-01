@@ -1,0 +1,17 @@
+{{ define "main" }}
+
+<article>
+  <h1 class="page-title">日志归档</h1>
+  <ul class="page-list">
+    {{ range .Pages }}
+    <li class="row">
+      <a href="{{ .Permalink }}">
+        <div>{{ .Title }}</div>
+        <div>{{ .Date.Format "January 2, 2006" }}</div>
+      </a>
+    </li>
+    {{ end }}
+  </ul>
+</article>
+
+{{ end }}

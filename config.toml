@@ -2,6 +2,8 @@ baseURL = "http://blog.francistm.com"
 languageCode = "zh-CN"
 title = "Francis' Blog"
 theme = ["Stridsvagn"]
+hasCJKLanguage = true
+disableKinds = ["taxonomy", "taxonomyTerm"]
 
 [menu]
   [[menu.main]]
@@ -21,3 +23,6 @@ theme = ["Stridsvagn"]
     name = "友情链接"
     url = "/links/"
     identifier = "links"
+
+[permalinks]
+    entries = "/entries/:slug"

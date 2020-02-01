@@ -5,7 +5,8 @@
 
   <div class="content">
     <p>
-      因为种种原因，从第一篇日志算起，到目前目前一共有 {{ len .Paginator.Pages }} 篇日志了。
+      {{ $posts := (where .Site.RegularPages "Section" "eq" "entries") }}
+      因为种种原因，从第一篇日志算起，到目前目前一共有 {{ len $posts }} 篇日志了。
       你可以在左侧的日志归档中找到他们。
     </p>
     <p>这里的内容乱七八糟，也可能会包含一些令人反感的内容。所以，浏览时需谨慎。</p>

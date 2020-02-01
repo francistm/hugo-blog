@@ -4,26 +4,13 @@ a
   color: $blue
   text-decoration: none
 
-.clearfix
-  display: block
-
-  &::after
-    height: 0
-    clear: both
-    content: " "
-    display: block
-
-.pull-left
-  float: left
-
-.pull-right
-  float: right
-
-.container
+#wrapper
   width: 960px
   margin: 0 auto
   padding: 20px 0
   box-sizing: border-box
+  display: flex
+  flex-direction: row
 
 nav
   width: 180 / 960 * 100%
@@ -32,59 +19,37 @@ nav
     padding: 0
     margin-top: 20px
     padding-right: 30px
-    @extend .clearfix
 
     li
-      font-size: 14px
+      font-size: 1em
       list-style: none
       margin: 10px auto
-      padding: 5px 10px
       text-align: right
 
-      &.active
-        background: $blue
+      a
+        display: block
+        padding: 5px 10px
 
+      &.active
         a
           color: #fff
+          background: $blue
 
 main
   width: 770 / 960 * 100%
 
-  ul.link-list, ul.post-list
-    padding: 0
-    @extend .clearfix
-
-  li.link-list-item, li.post-list-item
-    display: block
-    list-style: none
-    margin: 10px auto
-
-    a
-      display: block
-      font-size: 14px
-
-  li.link-list-item
-    .link-description
-      color: #999
-      padding-left: 25px
-
 article
   p
-    font-size: 14px
     line-height: 30px
-
-  ul, ol
-    font-size: 14px
 
   pre, code
     margin: 0
     padding: 0
-    font-size: 14px
     font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace
 
   .page-meta
     color: gray
-    font-size: 12px
+    font-size: 0.8em
     text-align: right
 
   .page-title
@@ -92,6 +57,22 @@ article
 
   .highlight
     padding: 10px
+
+  .page-list
+    padding: 0
+
+    .row
+      list-style: none
+      
+      a
+        font-size: 1em
+        padding: 10px
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+
+      a:hover
+        background: #f0f0f0
 
 @media screen and (max-width: 960px)
   .container

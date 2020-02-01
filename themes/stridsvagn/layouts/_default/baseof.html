@@ -13,15 +13,13 @@
   <link rel="stylesheet" type="text/css" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
 </head>
 <body>
-<div class="container">
-  <div class="clearfix">
-    <nav class="pull-left">
-      {{- partial "sidebar.html" . -}}
-    </nav>
-    <main class="pull-right">
-      {{- block "main" . }}{{- end }}
-    </main>
-  </div>
+<div id="wrapper">
+  <nav>
+    {{- partial "sidebar.html" . -}}
+  </nav>
+  <main>
+    {{- block "main" . }}{{- end }}
+  </main>
 </div>
 </body>
 </html>
