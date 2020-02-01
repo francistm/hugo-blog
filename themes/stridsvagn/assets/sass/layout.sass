@@ -39,40 +39,58 @@ main
   width: 770 / 960 * 100%
 
 article
-  p
-    line-height: 30px
-
-  pre, code
-    margin: 0
-    padding: 0
-    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace
-
-  .page-meta
-    color: gray
-    font-size: 0.8em
-    text-align: right
-
   .page-title
     margin-top: 0
 
-  .highlight
-    padding: 10px
+  &.links-list
+    ul
+      li
+        list-style: none
+        margin-bottom: 15px
 
-  .page-list
-    padding: 0
+        a
+          font-size: 1em
+          padding: 10px
+          padding-left: 0
+          display: block
 
-    .row
-      list-style: none
-      
-      a
-        font-size: 1em
-        padding: 10px
-        display: flex
-        flex-direction: row
-        justify-content: space-between
+        .description
+          font-size: 0.8em
+          color: #333
 
-      a:hover
-        background: #f0f0f0
+  &.entries-list
+    ul
+      padding: 0
+
+      li
+        list-style: none
+        
+        a
+          font-size: 1em
+          padding: 10px
+          display: flex
+          flex-direction: row
+          justify-content: space-between
+
+        a:hover
+          background: #f0f0f0
+
+  &.entries-single
+    p
+      line-height: 30px
+
+    pre, code
+      margin: 0
+      padding: 0
+      font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace
+
+    .page-meta
+      color: gray
+      font-size: 0.8em
+      text-align: right
+
+    .highlight
+      padding: 10px
 
 @media screen and (max-width: 960px)
   .container
