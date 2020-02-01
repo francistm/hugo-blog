@@ -23,6 +23,3 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
     name = "友情链接"
     url = "/links/"
     identifier = "links"
-
-[permalinks]
-    entries = "/entries/:slug"
