@@ -3,7 +3,6 @@ languageCode = "zh-CN"
 title = "Francis' Blog"
 hasCJKLanguage = true
 enableEmoji = true
-enableGitInfo = true
 disableKinds = ["taxonomy", "taxonomyTerm"]
 
 [menu]

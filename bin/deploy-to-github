@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+# Must add <site_root>/public folder to gh-pages git worktree first
+
+[[ -z `which git` ]] && ecoh "Missing git for commit"
+[[ -z `which hugo` ]] && echo "Missing hugo for build static site"
+
+SCRIPT_PATH=`cd $(dirname $0); pwd`
+
+SITE_ROOT="${SCRIPT_PATH}/.."
+PUBLIC_PATH="${SCRIPT_PATH}/../public"
+
+cd $SITE_ROOT && hugo --log --verbose --debug
+
+# Copy a index.xml to feed.xml for backward compatible after generate
+if [[ -e "${PUBLIC_PATH}/index.xml" ]]; then
+  cp "${PUBLIC_PATH}/index.xml" "${PUBLIC_PATH}/feed.xml"
+fi
+
+echo "Site generated, ready to upload ${PUBLIC_PATH} to remote"
