@@ -3,298 +3,307 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://blog.francistm.com/entries/introduct-2019/</loc>
-    <lastmod>2020-02-02T18:42:24+08:00</lastmod>
+    <loc>http://blog.francistm.com/entries/introduct-2020/</loc>
+    <lastmod>2020-02-02T19:46:20+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://blog.francistm.com/entries/introduct-2018/</loc>
-    <lastmod>2020-02-02T18:42:24+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.francistm.com/entries/never-seen-such-a-shameless-men/</loc>
-    <lastmod>2020-02-02T18:42:24+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.francistm.com/entries/introduct-2017/</loc>
-    <lastmod>2020-02-02T18:42:24+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.francistm.com/entries/upgrade-to-rails-5/</loc>
-    <lastmod>2020-02-02T18:42:24+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.francistm.com/entries/first-cta-in-alliances/</loc>
-    <lastmod>2020-02-02T18:42:24+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.francistm.com/entries/ng2-in-mp-wechat-testdrive/</loc>
-    <lastmod>2020-02-02T18:42:24+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.francistm.com/entries/parse-json-in-golang/</loc>
-    <lastmod>2020-02-02T18:42:24+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.francistm.com/entries/self-drive-travle-to-turpan/</loc>
-    <lastmod>2020-02-02T18:42:24+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.francistm.com/entries/introduct-2016/</loc>
-    <lastmod>2020-02-02T18:42:24+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.francistm.com/entries/use-supervisor-to-manage-puma/</loc>
-    <lastmod>2020-02-02T18:42:24+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.francistm.com/entries/birthday-2015/</loc>
-    <lastmod>2020-02-02T18:42:24+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.francistm.com/entries/drupal-on-net-cn/</loc>
-    <lastmod>2020-02-02T18:42:24+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.francistm.com/entries/last-week-of-2014/</loc>
-    <lastmod>2020-02-02T18:42:24+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.francistm.com/entries/get-my-first-km/</loc>
-    <lastmod>2020-02-02T18:42:24+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.francistm.com/entries/about-these-days-2014-5-27/</loc>
-    <lastmod>2020-02-02T18:42:24+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.francistm.com/entries/apparently-i-am-talking-about-something-crap/</loc>
-    <lastmod>2020-02-02T18:42:24+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.francistm.com/entries/i18n-solution-in-ruby-on-rails/</loc>
-    <lastmod>2020-02-02T18:42:24+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.francistm.com/entries/the-last-snow-of-winter-in-2014/</loc>
-    <lastmod>2020-02-02T18:42:24+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.francistm.com/entries/how-to-join-cagetest/</loc>
-    <lastmod>2020-02-02T18:42:24+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.francistm.com/entries/return-to-work-of-2014/</loc>
-    <lastmod>2020-02-02T18:42:24+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.francistm.com/entries/so-worry-about-the-iq/</loc>
-    <lastmod>2020-02-02T18:42:24+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.francistm.com/entries/introduct-2014/</loc>
-    <lastmod>2020-02-02T18:42:24+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.francistm.com/entries/define-secret-for-travis/</loc>
-    <lastmod>2020-02-02T18:42:24+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.francistm.com/entries/install-mj-in-ksp-022/</loc>
-    <lastmod>2020-02-02T18:42:24+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.francistm.com/entries/there-is-no-need-to-worry-about-ie6/</loc>
-    <lastmod>2020-02-02T18:42:24+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.francistm.com/entries/mid-autumn-2013/</loc>
-    <lastmod>2020-02-02T18:42:24+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.francistm.com/entries/finally-play-aa3-easy-and-smooth/</loc>
-    <lastmod>2020-02-02T18:42:24+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.francistm.com/entries/why-younger-are-so-irritable/</loc>
-    <lastmod>2020-02-02T18:42:24+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.francistm.com/entries/dusk-in-may/</loc>
-    <lastmod>2020-02-02T18:42:24+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.francistm.com/entries/using-ctrlp-instead-fuzzyfinder/</loc>
-    <lastmod>2020-02-02T18:42:24+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.francistm.com/entries/finally-get-lh737-online/</loc>
-    <lastmod>2020-02-02T18:42:24+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.francistm.com/entries/why-bad-luck-always-with-me/</loc>
-    <lastmod>2020-02-02T18:42:24+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.francistm.com/entries/change-to-another-application-again/</loc>
-    <lastmod>2020-02-02T18:42:24+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.francistm.com/entries/about-these-days-2013-1-29/</loc>
-    <lastmod>2020-02-02T18:42:24+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.francistm.com/entries/finally-fixed-my-mba/</loc>
-    <lastmod>2020-02-02T18:42:24+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.francistm.com/entries/about-this-days-2012-11-20/</loc>
-    <lastmod>2020-02-02T18:42:24+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.francistm.com/entries/too-much-competition-in-internet/</loc>
-    <lastmod>2020-02-02T18:42:24+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.francistm.com/entries/change-to-another-app-again/</loc>
-    <lastmod>2020-02-02T18:42:24+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.francistm.com/entries/tried-mgs4/</loc>
-    <lastmod>2020-02-02T18:42:24+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.francistm.com/entries/do-not-trust-cross-platform-anymore/</loc>
-    <lastmod>2020-02-02T18:42:24+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.francistm.com/entries/double-seventh-festival/</loc>
-    <lastmod>2020-02-02T18:42:24+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.francistm.com/entries/about-this-days-8-14/</loc>
-    <lastmod>2020-02-02T18:42:24+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.francistm.com/entries/valve-how-i-got-here-what-its-like-and-what-im-doing-2/</loc>
-    <lastmod>2020-02-02T18:42:24+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.francistm.com/entries/birthday-2012/</loc>
-    <lastmod>2020-02-02T18:42:24+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.francistm.com/entries/use-ass-to-make-choice/</loc>
-    <lastmod>2020-02-02T18:42:24+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.francistm.com/entries/valve-how-i-got-here-what-its-like-and-what-im-doing-1/</loc>
-    <lastmod>2020-02-02T18:42:24+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.francistm.com/entries/about-this-days-6-27/</loc>
-    <lastmod>2020-02-02T18:42:24+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.francistm.com/entries/to-be-a-good-man-to-repair-the-computer/</loc>
-    <lastmod>2020-02-02T18:42:24+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.francistm.com/entries/why-forum-cannot-remove-my-own-post/</loc>
-    <lastmod>2020-02-02T18:42:24+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.francistm.com/entries/what-is-the-real-friend/</loc>
-    <lastmod>2020-02-02T18:42:24+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.francistm.com/entries/lose-job-again/</loc>
-    <lastmod>2020-02-02T18:42:24+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.francistm.com/entries/is-microsoft-platform-prohibitively-expensive-for-large-scale-web-deployment/</loc>
-    <lastmod>2020-02-02T18:42:24+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.francistm.com/entries/about-this-days-2-26/</loc>
-    <lastmod>2020-02-02T18:42:24+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.francistm.com/entries/several-working-days/</loc>
-    <lastmod>2020-02-02T18:42:24+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.francistm.com/entries/hello-world/</loc>
-    <lastmod>2020-02-02T18:42:24+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.francistm.com/links/</loc>
-    <lastmod>2020-02-02T18:42:24+08:00</lastmod>
+    <loc>http://blog.francistm.com/entries/introduct-2020/</loc>
+    <lastmod>2020-02-02T19:46:20+08:00</lastmod>
   </url>
   
   <url>
     <loc>http://blog.francistm.com/entries/</loc>
-    <lastmod>2020-02-02T18:42:24+08:00</lastmod>
+    <lastmod>2020-02-02T19:46:20+08:00</lastmod>
   </url>
   
   <url>
     <loc>http://blog.francistm.com/</loc>
-    <lastmod>2020-02-02T18:42:24+08:00</lastmod>
+    <lastmod>2020-02-02T19:46:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.francistm.com/entries/introduct-2019/</loc>
+    <lastmod>2019-02-16T02:26:48+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.francistm.com/entries/introduct-2018/</loc>
+    <lastmod>2017-12-31T10:43:11+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.francistm.com/entries/never-seen-such-a-shameless-men/</loc>
+    <lastmod>2017-05-24T10:21:32+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.francistm.com/entries/introduct-2017/</loc>
+    <lastmod>2017-01-02T17:40:02+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.francistm.com/entries/upgrade-to-rails-5/</loc>
+    <lastmod>2016-10-09T03:24:16+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.francistm.com/entries/first-cta-in-alliances/</loc>
+    <lastmod>2016-07-17T18:19:03+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.francistm.com/entries/ng2-in-mp-wechat-testdrive/</loc>
+    <lastmod>2016-06-25T18:33:02+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.francistm.com/entries/parse-json-in-golang/</loc>
+    <lastmod>2016-03-28T06:53:11+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.francistm.com/entries/self-drive-travle-to-turpan/</loc>
+    <lastmod>2016-02-28T19:17:44+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.francistm.com/entries/introduct-2016/</loc>
+    <lastmod>2016-02-15T14:35:51+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.francistm.com/entries/use-supervisor-to-manage-puma/</loc>
+    <lastmod>2016-02-12T19:34:44+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.francistm.com/entries/birthday-2015/</loc>
+    <lastmod>2016-02-12T18:08:03+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.francistm.com/entries/drupal-on-net-cn/</loc>
+    <lastmod>2016-02-12T18:07:53+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.francistm.com/entries/last-week-of-2014/</loc>
+    <lastmod>2016-02-12T18:07:45+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.francistm.com/entries/get-my-first-km/</loc>
+    <lastmod>2016-02-14T12:50:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.francistm.com/entries/about-these-days-2014-5-27/</loc>
+    <lastmod>2016-02-12T18:07:25+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.francistm.com/entries/apparently-i-am-talking-about-something-crap/</loc>
+    <lastmod>2016-02-12T18:07:17+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.francistm.com/entries/i18n-solution-in-ruby-on-rails/</loc>
+    <lastmod>2016-02-14T10:25:59+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.francistm.com/entries/the-last-snow-of-winter-in-2014/</loc>
+    <lastmod>2016-02-14T07:23:41+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.francistm.com/entries/how-to-join-cagetest/</loc>
+    <lastmod>2016-02-14T07:25:08+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.francistm.com/entries/return-to-work-of-2014/</loc>
+    <lastmod>2016-02-12T18:06:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.francistm.com/entries/so-worry-about-the-iq/</loc>
+    <lastmod>2016-02-14T07:26:42+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.francistm.com/entries/introduct-2014/</loc>
+    <lastmod>2016-02-12T18:06:06+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.francistm.com/entries/define-secret-for-travis/</loc>
+    <lastmod>2016-02-14T16:17:05+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.francistm.com/entries/install-mj-in-ksp-022/</loc>
+    <lastmod>2016-02-12T18:05:31+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.francistm.com/entries/there-is-no-need-to-worry-about-ie6/</loc>
+    <lastmod>2016-02-14T07:27:22+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.francistm.com/entries/mid-autumn-2013/</loc>
+    <lastmod>2016-02-12T18:05:12+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.francistm.com/entries/finally-play-aa3-easy-and-smooth/</loc>
+    <lastmod>2016-02-12T18:04:54+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.francistm.com/entries/why-younger-are-so-irritable/</loc>
+    <lastmod>2016-02-14T07:28:10+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.francistm.com/entries/dusk-in-may/</loc>
+    <lastmod>2016-02-14T07:28:59+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.francistm.com/entries/using-ctrlp-instead-fuzzyfinder/</loc>
+    <lastmod>2016-02-12T18:04:27+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.francistm.com/entries/finally-get-lh737-online/</loc>
+    <lastmod>2016-02-12T18:04:16+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.francistm.com/entries/why-bad-luck-always-with-me/</loc>
+    <lastmod>2016-02-12T18:04:07+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.francistm.com/entries/change-to-another-application-again/</loc>
+    <lastmod>2016-02-15T14:37:22+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.francistm.com/entries/about-these-days-2013-1-29/</loc>
+    <lastmod>2016-02-12T18:03:46+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.francistm.com/entries/finally-fixed-my-mba/</loc>
+    <lastmod>2016-02-12T18:03:33+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.francistm.com/entries/about-this-days-2012-11-20/</loc>
+    <lastmod>2016-02-12T18:03:25+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.francistm.com/entries/too-much-competition-in-internet/</loc>
+    <lastmod>2016-02-12T18:03:18+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.francistm.com/entries/change-to-another-app-again/</loc>
+    <lastmod>2016-02-12T18:03:05+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.francistm.com/entries/tried-mgs4/</loc>
+    <lastmod>2016-02-12T18:02:57+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.francistm.com/entries/do-not-trust-cross-platform-anymore/</loc>
+    <lastmod>2016-02-12T18:02:49+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.francistm.com/entries/double-seventh-festival/</loc>
+    <lastmod>2016-02-12T18:02:37+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.francistm.com/entries/about-this-days-8-14/</loc>
+    <lastmod>2016-02-12T18:02:28+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.francistm.com/entries/valve-how-i-got-here-what-its-like-and-what-im-doing-2/</loc>
+    <lastmod>2016-02-12T18:02:01+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.francistm.com/entries/birthday-2012/</loc>
+    <lastmod>2016-02-12T18:01:52+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.francistm.com/entries/use-ass-to-make-choice/</loc>
+    <lastmod>2016-02-12T18:01:44+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.francistm.com/entries/valve-how-i-got-here-what-its-like-and-what-im-doing-1/</loc>
+    <lastmod>2016-02-12T18:01:34+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.francistm.com/entries/about-this-days-6-27/</loc>
+    <lastmod>2016-02-12T18:01:26+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.francistm.com/entries/to-be-a-good-man-to-repair-the-computer/</loc>
+    <lastmod>2016-02-12T18:01:18+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.francistm.com/entries/why-forum-cannot-remove-my-own-post/</loc>
+    <lastmod>2016-02-12T18:01:10+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.francistm.com/entries/what-is-the-real-friend/</loc>
+    <lastmod>2016-02-12T18:01:02+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.francistm.com/entries/lose-job-again/</loc>
+    <lastmod>2016-02-12T17:59:52+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.francistm.com/entries/is-microsoft-platform-prohibitively-expensive-for-large-scale-web-deployment/</loc>
+    <lastmod>2016-02-12T17:59:41+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.francistm.com/entries/about-this-days-2-26/</loc>
+    <lastmod>2016-02-12T17:59:32+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.francistm.com/entries/several-working-days/</loc>
+    <lastmod>2016-02-28T17:44:22+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.francistm.com/entries/hello-world/</loc>
+    <lastmod>2016-02-15T14:32:53+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.francistm.com/links/</loc>
   </url>
   
 </urlset>
