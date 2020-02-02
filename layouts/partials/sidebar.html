@@ -1,6 +1,6 @@
 <div id="logo">
-  {{ $logoUrl := resources.Get "images/logo.png" | fingerprint }}
-  <a href="{{.Site.BaseURL}}">
+  {{- $logoUrl := resources.Get "images/logo.png" | fingerprint -}}
+  <a href="{{ .Site.BaseURL }}">
     <img src="{{ $logoUrl.Permalink }}" integrity="{{ $logoUrl.Data.Integrity }}" alt="{{ .Site.Title }}" />
   </a>
 </div>

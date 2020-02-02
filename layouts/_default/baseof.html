@@ -8,11 +8,14 @@
   <meta name="X-UA-Compatible" content="IE=edge">
   <meta name="renderer" content="webkit">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- TODO add rss link -->
+  
+  {{ range .AlternativeOutputFormats }}
+  <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" title="{{ .Name }}" href="{{ .Permalink | safeURL }}">
+  {{ end }}
 
   {{ $styles := resources.Get "sass/layout.sass" | toCSS | minify | fingerprint }}
-  <link rel="stylesheet" type="text/css" href="//cdn.staticfile.org/normalize/8.0.1/normalize.css" media="screen">
-  <link rel="stylesheet" type="text/css" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
+  <link rel="stylesheet" type="text/css" href="//cdn.staticfile.org/normalize/8.0.1/normalize.css" media="all">
+  <link rel="stylesheet" type="text/css" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}" media="all">
 </head>
 <body>
 <div id="wrapper">
@@ -21,6 +24,8 @@
   </nav>
   <main>
     {{- block "main" . }}{{- end }}
+
+    <div id="build-info">Last build hash: {{ .GitInfo.AbbreviatedHash }}</div>
   </main>
 </div>
 </body>
