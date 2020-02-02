@@ -1,7 +1,6 @@
 baseURL = "http://blog.francistm.com"
 languageCode = "zh-CN"
 title = "Francis' Blog"
-theme = ["Stridsvagn"]
 hasCJKLanguage = true
 disableKinds = ["taxonomy", "taxonomyTerm"]
 
