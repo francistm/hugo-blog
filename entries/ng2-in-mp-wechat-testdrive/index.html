@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>微信公众号 Angular2 实测 &laquo; Francis&#39; Blog</title>
+  <meta name="X-UA-Compatible" content="IE=edge">
+  <meta name="renderer" content="webkit">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+
+  
+  <link rel="stylesheet" type="text/css" href="//cdn.staticfile.org/normalize/8.0.1/normalize.css" media="all">
+  <link rel="stylesheet" type="text/css" href="http://blog.francistm.com/sass/layout.min.3da37313df24a7bb1b567804a82404314f9f79eeab32a1b2d5d3a259e3b19df7.css" integrity="sha256-PaNzE98kp7sbVngEqCQEMU&#43;fee6rMqGy1dOiWeOxnfc=" media="all">
+</head>
+<body>
+<div id="wrapper">
+  <nav><div id="logo"><a href="http://blog.francistm.com">
+    <img src="http://blog.francistm.com/images/logo.57b05cbe9761dcb66b57bafe41995425ea421c67327ad163a5a909c4cf4436de.png" integrity="sha256-V7Bcvpdh3LZrV7r&#43;QZlUJepCHGcyetFjpakJxM9ENt4=" alt="Francis&#39; Blog" />
+  </a>
+</div>
+
+<ul class="nav">
+  
+  
+    
+      <li>
+    
+
+      <a href="/">首页</a>
+    </li>
+  
+    
+      <li>
+    
+
+      <a href="/entries/">日志归档</a>
+    </li>
+  
+    
+      <li>
+    
+
+      <a href="/links/">友情链接</a>
+    </li>
+  
+</ul>
+</nav>
+  <main>
+
+<article class="entries-single">
+  <h1 class="page-title">微信公众号 Angular2 实测</h1>
+
+  <div class="page-meta">
+    发表于 2016-06-25 17:47:35，
+    最后更新 2020-02-02 18:42:24
+  </div>
+
+  <div class="content markdown"><p>最近干了一个微信公众号的活儿。<br>
+业内现在好像挺流行React的，不过看了几天发现根本不适合我，毕竟单靠一个React似乎还搞不出SPA，不像NG是一站式解决。</p>
+<p>开始建好Component，写好视图，配好路由器。Webpack一编译一切正常，TypeScript写起来就是舒服。
+往服务器上一传，自己手机上（iOS 9）一看，一切运转正常。可没高兴几天，突然发现Android上居然连 app.component 都没法初始化。</p>
+<p>第一反应先看看前辈们是否也遇到这个问题了吧。随后就看到了这个<a href="http://www.zhihu.com/question/41020291">提问</a>。
+一路搜索下去，看到了<a href="https://github.com/angular/zone.js/issues/328">这个Issue</a> 。
+瞬间感觉胜利就在眼前了，可惜改完往服务器上一传一点变化也没有，还是没法初始化。看来这样的黑箱操作是没法解决这问题了。</p>
+<p>思前想后，看来方案有三种可选：</p>
+<ol>
+<li>各种 Hack，让 Angular 2 可以运行在腾讯的X5浏览器上</li>
+<li>判断 UserAgent ，为X5内核的浏览器单独做一个版本</li>
+<li>完全重做，考虑用 Angular1 或者 Vue.js 实现</li>
+</ol>
+<p>想方设法，借到了一个可以连接PC端微信调试器的安卓机（联想A330E）。伴随着设备的到位，终于看到了 Javascript Console 抛出的异常。似乎是 ng2 内部的一个 Collection 对象的方法不支持。
+这个问题搜了一下，似乎没什么好答案。悲剧啊，难道这注定了NG2无缘在微信浏览器里运行了么？</p>
+<p>顺手翻了一下 NG2 官方的入门教程，发现他的页面中引入了一个 <code>core-js/client/slim.js</code> 的文件，一查原来是一个为了兼容低版本浏览器的库。也管不了这么多了，先引入进来再说吧。</p>
+<p>直接修改入口文件：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp">import <span style="color:#e6db74">&#34;core-js/client/shim&#34;</span>;  <span style="color:#75715e">// Add this import
+</span><span style="color:#75715e"></span>import { AppComponent } <span style="color:#66d9ef">from</span> <span style="color:#e6db74">&#34;./app.component&#34;</span>;
+import { bootstrap } <span style="color:#66d9ef">from</span> <span style="color:#e6db74">&#34;@angular/platform-browser-dynamic&#34;</span>;
+
+bootstrap(AppComponent);
+</code></pre></div><p>编译完往服务器上一更新，我勒个去，终于可以正常运行了。真是激动地差点出去放挂鞭炮。
+由此看来，当前版本的微信 (iOS: 6.3.21 ，Android: 6.3.18) 可以完全正常的兼容Angular 2 (2.0.0-rc.2) 了。</p>
+</div>
+</article>
+
+
+
+    <div id="build-info">Last build hash: d278eb4</div>
+  </main>
+</div>
+</body>
+</html>

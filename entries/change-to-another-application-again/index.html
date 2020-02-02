@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>再度换Blog &laquo; Francis&#39; Blog</title>
+  <meta name="X-UA-Compatible" content="IE=edge">
+  <meta name="renderer" content="webkit">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+
+  
+  <link rel="stylesheet" type="text/css" href="//cdn.staticfile.org/normalize/8.0.1/normalize.css" media="all">
+  <link rel="stylesheet" type="text/css" href="http://blog.francistm.com/sass/layout.min.3da37313df24a7bb1b567804a82404314f9f79eeab32a1b2d5d3a259e3b19df7.css" integrity="sha256-PaNzE98kp7sbVngEqCQEMU&#43;fee6rMqGy1dOiWeOxnfc=" media="all">
+</head>
+<body>
+<div id="wrapper">
+  <nav><div id="logo"><a href="http://blog.francistm.com">
+    <img src="http://blog.francistm.com/images/logo.57b05cbe9761dcb66b57bafe41995425ea421c67327ad163a5a909c4cf4436de.png" integrity="sha256-V7Bcvpdh3LZrV7r&#43;QZlUJepCHGcyetFjpakJxM9ENt4=" alt="Francis&#39; Blog" />
+  </a>
+</div>
+
+<ul class="nav">
+  
+  
+    
+      <li>
+    
+
+      <a href="/">首页</a>
+    </li>
+  
+    
+      <li>
+    
+
+      <a href="/entries/">日志归档</a>
+    </li>
+  
+    
+      <li>
+    
+
+      <a href="/links/">友情链接</a>
+    </li>
+  
+</ul>
+</nav>
+  <main>
+
+<article class="entries-single">
+  <h1 class="page-title">再度换Blog</h1>
+
+  <div class="page-meta">
+    发表于 2016-02-12 18:03:55，
+    最后更新 2020-02-02 18:42:24
+  </div>
+
+  <div class="content markdown"><p>唉，最近又犯了折腾的毛病，<code>PHP + MySQL</code> 似乎已经不能满足我了，PHP写了这么久实在没什么好感（关于语言设计上的问题我也没资格妄加评论），但对于<code>Python</code>什么的又无大爱；索性直接一步换到<code>Ruby on Rails</code>算了。</p>
+<p>一直听说<code>Yii</code>和<code>Ruby on Rails</code>很相似，才鼓足勇气装好了<code>rvm</code>，开始准备尝试。一路上磕磕绊绊，途中几经放弃，但最终还是折腾出了这么一个破玩意儿。</p>
+<p>不得不赞叹一下<code>Rails</code>这个神器，后悔早些年没有接触到他。和<code>Yii</code>相比较：</p>
+<ul>
+<li>没有那一套内置的挂件，比如<code>CMenu</code>, <code>CGridView</code> 等，需要自己动手。但灵活性有显著提高</li>
+<li>系统集成度不是很高，比如用户登录部分就需要自己手动实现</li>
+<li>部署后，支持<code>CSS</code>以及<code>JavaScript</code>的压缩、合并</li>
+<li>配置文件略显复杂，手册到目前为止还没有看懂</li>
+</ul>
+<p>至于<code>Ruby</code>和<code>PHP</code>的比较，这里就不提了，爽的真的不只是一点点啊。</p>
+<p>目前依旧部署在<a href="http://openshift.redhat.com/">OpenShift</a>上，使用<a href="http://orca.io/">Orca.IO</a>加速。</p>
+<p>所用的gems</p>
+<ul>
+<li>sorcery 登录验证</li>
+<li>kaminari 翻页</li>
+<li>kramdown Markdown解析</li>
+</ul>
+<p>用<code>http://rubygems.org</code>安装Gem速度实在让人崩溃，干脆本地的<code>rvm</code>换成淘宝的源，然后<code>bundle install --local</code>直接妥活，唉……</p>
+</div>
+</article>
+
+
+
+    <div id="build-info">Last build hash: d278eb4</div>
+  </main>
+</div>
+</body>
+</html>

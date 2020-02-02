@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>追寻 Cagetest 的招聘信息 &laquo; Francis&#39; Blog</title>
+  <meta name="X-UA-Compatible" content="IE=edge">
+  <meta name="renderer" content="webkit">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+
+  
+  <link rel="stylesheet" type="text/css" href="//cdn.staticfile.org/normalize/8.0.1/normalize.css" media="all">
+  <link rel="stylesheet" type="text/css" href="http://blog.francistm.com/sass/layout.min.3da37313df24a7bb1b567804a82404314f9f79eeab32a1b2d5d3a259e3b19df7.css" integrity="sha256-PaNzE98kp7sbVngEqCQEMU&#43;fee6rMqGy1dOiWeOxnfc=" media="all">
+</head>
+<body>
+<div id="wrapper">
+  <nav><div id="logo"><a href="http://blog.francistm.com">
+    <img src="http://blog.francistm.com/images/logo.57b05cbe9761dcb66b57bafe41995425ea421c67327ad163a5a909c4cf4436de.png" integrity="sha256-V7Bcvpdh3LZrV7r&#43;QZlUJepCHGcyetFjpakJxM9ENt4=" alt="Francis&#39; Blog" />
+  </a>
+</div>
+
+<ul class="nav">
+  
+  
+    
+      <li>
+    
+
+      <a href="/">首页</a>
+    </li>
+  
+    
+      <li>
+    
+
+      <a href="/entries/">日志归档</a>
+    </li>
+  
+    
+      <li>
+    
+
+      <a href="/links/">友情链接</a>
+    </li>
+  
+</ul>
+</nav>
+  <main>
+
+<article class="entries-single">
+  <h1 class="page-title">追寻 Cagetest 的招聘信息</h1>
+
+  <div class="page-meta">
+    发表于 2016-02-12 18:06:31，
+    最后更新 2020-02-02 18:42:24
+  </div>
+
+  <div class="content markdown"><p>无意中看到了一个网站，<a href="http://www.cagetest.com/joinus.html">CAGETEST</a> ，高级渗透测试。听名字是挺高端，大气，上档次的。页面最下角找到了一个Join Us的链接，很有兴趣的看看成为黑客级的程序员需要哪些素质，就点开来看看。</p>
+<p>打开后什么都没有，查看源码就发现一段疑似base64加密后的字符串。<br>
+<img src="http://7xqvtj.com1.z0.glb.clouddn.com/uploads/files/51/cagetest-encoded-string.jpg?imageMogr/thumbnail/750x%3E" alt=""></p>
+<p>用Base64解密后，果然是一片乱码，没有看到任何有用的字符串信息……<br>
+这可怎么办，瞬间无从下手了。想想我当年高大上的Gitcafe不也是如此的招聘信息么。如今看来果然是花瓶一只，和Cagetest的这些黑客们比起来都是小儿科。</p>
+<p>把解密的结果输出到文件，然后用VIM打开，然后换到二进制。突然发现第0~1的字节为<code>1f8b 0808</code>。好熟悉的文件头啊！<br>
+Google一查，好像跟GZip有关系。直接用GZip解压了，果然没有任何错误。<br>
+<img src="http://7xqvtj.com1.z0.glb.clouddn.com/uploads/files/61/cagetest-base64-decoded-output-header.png?imageMogr/thumbnail/750x%3E" alt=""></p>
+<p>解压缩以后，又出来一个非文本的文件，唉，真是苦逼。难度可以不要这么高么。
+继续分析文件头看看有没有什么门道。<br>
+<img src="http://7xqvtj.com1.z0.glb.clouddn.com/uploads/files/71/cagetest-gzip-decompressed-output-header.png?imageMogr/thumbnail/750x%3E" alt=""></p>
+<p>看了半天也没什么进展。不过就看到开头是NES三个字母，难道真的是任天堂的ROM？
+查了一下<a href="http://fms.komkon.org/EMUL8/NES.html#LABM">http://fms.komkon.org/EMUL8/NES.html#LABM</a>，好像还真的完全符合啊。仔细看了一遍这玩意儿，好像完全不懂，唉。</p>
+<p>按照文档的大致思路，可能招聘的信息就在PPU段中。尝试了各种的逆向工程，都毫无进展。看来我真的不是这块料。
+既然事已至此，就搞一个模拟器看看这ROM到底是什么内容，也验证一下自己的判断到底是不是NES的ROM吧。</p>
+<p>拖进去一看，还真的运行了，就是没有声音，也没有办法操作。</p>
+<p>就这样卡了我两天。各种偏移都没有找到任何有用的信息。<br>
+今天中午实在太饿，但一看钱包里只剩下一毛钱（没错，真的是一毛钱），还是算了吧。<br>
+忽然回想了一下看到的那个画面，<code>NES -at- CAGETEST.COM</code> 这不就是一个Email地址么？</p>
+<p>应该这就是官方所提到的招聘信息吧？<br>
+更或许还有更深层次的信息我没有挖掘出来，我的水平也就到这个地步了。</p>
+</div>
+</article>
+
+
+
+    <div id="build-info">Last build hash: d278eb4</div>
+  </main>
+</div>
+</body>
+</html>

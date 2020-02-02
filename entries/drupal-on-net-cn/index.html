@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>万网共享主机上的Drupal实测 &laquo; Francis&#39; Blog</title>
+  <meta name="X-UA-Compatible" content="IE=edge">
+  <meta name="renderer" content="webkit">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+
+  
+  <link rel="stylesheet" type="text/css" href="//cdn.staticfile.org/normalize/8.0.1/normalize.css" media="all">
+  <link rel="stylesheet" type="text/css" href="http://blog.francistm.com/sass/layout.min.3da37313df24a7bb1b567804a82404314f9f79eeab32a1b2d5d3a259e3b19df7.css" integrity="sha256-PaNzE98kp7sbVngEqCQEMU&#43;fee6rMqGy1dOiWeOxnfc=" media="all">
+</head>
+<body>
+<div id="wrapper">
+  <nav><div id="logo"><a href="http://blog.francistm.com">
+    <img src="http://blog.francistm.com/images/logo.57b05cbe9761dcb66b57bafe41995425ea421c67327ad163a5a909c4cf4436de.png" integrity="sha256-V7Bcvpdh3LZrV7r&#43;QZlUJepCHGcyetFjpakJxM9ENt4=" alt="Francis&#39; Blog" />
+  </a>
+</div>
+
+<ul class="nav">
+  
+  
+    
+      <li>
+    
+
+      <a href="/">首页</a>
+    </li>
+  
+    
+      <li>
+    
+
+      <a href="/entries/">日志归档</a>
+    </li>
+  
+    
+      <li>
+    
+
+      <a href="/links/">友情链接</a>
+    </li>
+  
+</ul>
+</nav>
+  <main>
+
+<article class="entries-single">
+  <h1 class="page-title">万网共享主机上的Drupal实测</h1>
+
+  <div class="page-meta">
+    发表于 2016-02-12 18:07:53，
+    最后更新 2020-02-02 18:42:24
+  </div>
+
+  <div class="content markdown"><p>最近被迫开始搞上了Drupal，原因其实也挺扯的。</p>
+<p>一个叫安大XXX的垃圾公司，搞了N多套具有针对性的ASP的CMS系统（没错，在2015年能见到ASP还能卖钱的确实挺难得），如XXX酒店网站，XXX公司网站。然后呢，还附带着主机、域名和企业邮箱一起卖。功能上就不说了，总之很简单，傻子都会操作，输入一个京东的URL，然后自动采集，并添加相应的内容。</p>
+<p>我的一个叔叔呢，不知道从哪找到的他们，然后就买了一套。刚开始一直放在香港的某处服务器上。但是后来嫌速度慢要换回国内。问题就从这里开始了。这破公司既然做主机，居然说新疆的网站不能备案，这能听的下去么。当然出于各种原因我答应这件事，还夸下海口说就包在我身上了。</p>
+<p>既然打算备案，那就只有换个主机，万网跟阿里云穿一条裤子了现在，但是预算尽可能的少，所以就万网X3吧。可先得拿到数据啊，百般折腾就是下载不下来，妈的这破后台怎么写的，压缩也出错，删除也出错。最终没办法跟他们客服撕破了脸才，他们才把数据邮件发了给我。还特别强调 <strong>有什么问题不负责任，技术支持属于付费服务，一次1000人民币</strong> 。我当时就想还能有啥问题，我才懒得改你们这破玩意儿呢。</p>
+<p>随后就买了万网共享主机，然后申请域名备案，提交相关资料。中间很顺利半个月备案号就下来了。咨询了几个搞.NET的前辈，看来这ASP部署没啥大问题，IIS 7都支持。打开FTP开始上传，传完以后一访问，哎呦我操了，怎么是安装页面？小伙子你坑我啊。再跟他们联系没有消息了，想必是把我拉黑了吧。这种事情还是得靠高层领导出面交涉，果然，给出了安装方法。可是我就是装不上啊，提示安装成功，结果返回了还是安装页面，你大爷的，瞬间感觉被诓了。</p>
+<p>凭借着多年的职业直觉，想着能不能从源码上入手看看问题在哪。打开看了一上午就发现我真的错了，真的是 Too Simple, Sometimes too naive 啊。没有模板引擎，页面里逻辑代码，SQL查询，HTML，JS各种玩意儿全在一起，哎呦我勒个去；这都是次要了，关键是核心部分还是加了密，加密方法还是这群狗逼自制的。好吧，继续让高层交涉，结果对方说是服务器不支持，这玩意儿又是有防黑客的技术，又是怎么有保护，要用VPS；共享主机里有什么组件没安装；又是有防火墙，但是又说不出具体是哪个组件。我去你大爷的，明明就是几个文件的头部有一批SQL过滤而已，这就防黑客技术了？别人安装好的都会有一个文件，为何我旧的主机上也他妈的没了？谁给我删了？扯了一大堆，总的来说就是『给钱爷爷不伺候了，谁让你们信誓旦旦的要转出去呢』。</p>
+<p>那搞不定就先解析回去，研究研究呗，解析回去了你大爷也是安装页面？果然是把我当做已流失客户彻底干掉了。</p>
+<p>看来是没戏了，我真的错了，真是在胡同里，遇到小流氓了。好吧，那问题总得解决，网站也不能一直打不开，不然多有损公司形象呢。做一套CMS呢，实在是觉得没意思，又不赚钱，每天EVE都没时间刷怪那还顾得上它，所以就上一套Drupal吧。咱自己动手丰衣足食，坚决不屈膝于小流氓。</p>
+<p>好了，上面的扯淡都不算数，现在才开始正题。</p>
+<hr>
+<p>总体来说没有问题，128M的内存限制也一切正常。就是几个小问题需要自己动手。</p>
+<ol>
+<li>启动页面压缩以后，刷着刷着页面就空白了</li>
+<li>原有的 <code>drupal_http_request</code> 函数因为 <code>stream_socket_client</code> 被主机限制了，所以很多相关功能都残废了（如启动简洁链接、自动检查更新）</li>
+<li><code>.htaccess</code> 文件神秘消失，但是似乎也可以生效</li>
+</ol>
+<p>解决：</p>
+<ol>
+<li>只开启合并JS和CSS，不要开启页面压缩就好了。原因目前尚知</li>
+<li>安装 <code>chr</code> 模块 ( <a href="https://www.drupal.org/project/chr">https://www.drupal.org/project/chr</a> ) ，用 cURL 代替原有的 <code>stream_socket_client</code> 即可</li>
+<li>本地改好了传上去，不要想着远程调试就OK了</li>
+</ol>
+<p>备注</p>
+<ul>
+<li>在开启了 chr 模块后，因为服务器的PHP开启了 safe_mode ，所以还是会有一个错误，按照错误提示，把 <code>chr.module</code> 中 336 行 注释掉就好了</li>
+</ul>
+<p>搞了这几步，启动自动更新模块，启动简洁链接，世界终于和谐了，看起来终于像一个正常的站了。</p>
+<p>最后再扯淡一句，安大这样的坑爹公司也能做大，真的只能说 <strong>『人傻钱多速来』</strong> 。</p>
+</div>
+</article>
+
+
+
+    <div id="build-info">Last build hash: d278eb4</div>
+  </main>
+</div>
+</body>
+</html>

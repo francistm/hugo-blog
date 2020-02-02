@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>网站终于上线了 &laquo; Francis&#39; Blog</title>
+  <meta name="X-UA-Compatible" content="IE=edge">
+  <meta name="renderer" content="webkit">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+
+  
+  <link rel="stylesheet" type="text/css" href="//cdn.staticfile.org/normalize/8.0.1/normalize.css" media="all">
+  <link rel="stylesheet" type="text/css" href="http://blog.francistm.com/sass/layout.min.3da37313df24a7bb1b567804a82404314f9f79eeab32a1b2d5d3a259e3b19df7.css" integrity="sha256-PaNzE98kp7sbVngEqCQEMU&#43;fee6rMqGy1dOiWeOxnfc=" media="all">
+</head>
+<body>
+<div id="wrapper">
+  <nav><div id="logo"><a href="http://blog.francistm.com">
+    <img src="http://blog.francistm.com/images/logo.57b05cbe9761dcb66b57bafe41995425ea421c67327ad163a5a909c4cf4436de.png" integrity="sha256-V7Bcvpdh3LZrV7r&#43;QZlUJepCHGcyetFjpakJxM9ENt4=" alt="Francis&#39; Blog" />
+  </a>
+</div>
+
+<ul class="nav">
+  
+  
+    
+      <li>
+    
+
+      <a href="/">首页</a>
+    </li>
+  
+    
+      <li>
+    
+
+      <a href="/entries/">日志归档</a>
+    </li>
+  
+    
+      <li>
+    
+
+      <a href="/links/">友情链接</a>
+    </li>
+  
+</ul>
+</nav>
+  <main>
+
+<article class="entries-single">
+  <h1 class="page-title">网站终于上线了</h1>
+
+  <div class="page-meta">
+    发表于 2016-02-12 18:04:16，
+    最后更新 2020-02-02 18:42:24
+  </div>
+
+  <div class="content markdown"><p>真心的不容易，上线当晚我激动的差点都哭了。整整历时一年，中间磕磕碰碰，能走到今天太不容易了。</p>
+<p>说实话这网站没什么创意，前台设计都是客户方面给定的，只是做了小幅度的修改；后台干脆上了一个<code>Bootstrap</code>框架，构架还是用<code>Yii</code> +<code>MySQL5</code> 来完成，没什么新意可以说。</p>
+<p>但这网站由于本身的业务需要，必须绑定到具体的计算机才可以使用，以此来避免同一个帐号可以在任意处登录。想来想去实在没什么办法，只好做了一个桌面客户端来辅助登录。</p>
+<p><code>MFC</code>，<code>VC++</code>什么的难度有些高，不是一时半会儿就能掌握的，干脆来<code>C#</code>吧，起码上手的快一些。<br>
+从<code>Nuget</code>上拉下来两个库，一个<code>EasyHttp</code>, 另一个<code>JsonFX</code>。这样核心的两个问题就解决了，剩下的窗口随便拖一拖就出来了。</p>
+<p>暂且就这样草草上线了，不过问题还是各种的多，虽然项目款已经给清了，但还是每天不停的在维护。</p>
+<p>所用到的程序</p>
+<ul>
+<li>PHP 5.3.10</li>
+<li>Ubuntu 12.04</li>
+<li>MySQL 5.5.29</li>
+<li>Nginx 1.2.8</li>
+</ul>
+<p>为了让前端静态文件合并，无奈之下只能使出了<code>nginx-http-concat</code>这个神器。顺便重构了下<code>CClientScript</code>，这样Yii就可以在<code>Nginx</code>下，使用<code>nginx-http-concat</code>来实现静态文件的合并了。<br>
+修改后的ClientScript源码： <a href="https://gist.github.com/francistm/5361415">https://gist.github.com/francistm/5361415</a></p>
+</div>
+</article>
+
+
+
+    <div id="build-info">Last build hash: d278eb4</div>
+  </main>
+</div>
+</body>
+</html>

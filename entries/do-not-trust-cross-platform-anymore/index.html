@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>再也不相信什么跨平台了 &laquo; Francis&#39; Blog</title>
+  <meta name="X-UA-Compatible" content="IE=edge">
+  <meta name="renderer" content="webkit">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+
+  
+  <link rel="stylesheet" type="text/css" href="//cdn.staticfile.org/normalize/8.0.1/normalize.css" media="all">
+  <link rel="stylesheet" type="text/css" href="http://blog.francistm.com/sass/layout.min.3da37313df24a7bb1b567804a82404314f9f79eeab32a1b2d5d3a259e3b19df7.css" integrity="sha256-PaNzE98kp7sbVngEqCQEMU&#43;fee6rMqGy1dOiWeOxnfc=" media="all">
+</head>
+<body>
+<div id="wrapper">
+  <nav><div id="logo"><a href="http://blog.francistm.com">
+    <img src="http://blog.francistm.com/images/logo.57b05cbe9761dcb66b57bafe41995425ea421c67327ad163a5a909c4cf4436de.png" integrity="sha256-V7Bcvpdh3LZrV7r&#43;QZlUJepCHGcyetFjpakJxM9ENt4=" alt="Francis&#39; Blog" />
+  </a>
+</div>
+
+<ul class="nav">
+  
+  
+    
+      <li>
+    
+
+      <a href="/">首页</a>
+    </li>
+  
+    
+      <li>
+    
+
+      <a href="/entries/">日志归档</a>
+    </li>
+  
+    
+      <li>
+    
+
+      <a href="/links/">友情链接</a>
+    </li>
+  
+</ul>
+</nav>
+  <main>
+
+<article class="entries-single">
+  <h1 class="page-title">再也不相信什么跨平台了</h1>
+
+  <div class="page-meta">
+    发表于 2016-02-12 18:02:49，
+    最后更新 2020-02-02 18:42:24
+  </div>
+
+  <div class="content markdown"><p>最近在搞一个项目（其实也有一段时间了，改改删删，需求天天变；唯一不变的就是预算），有个最终需求就是需要把数据从旧版程序迁移过来。而个程序所在的服务器完全是独立的。而且一个为共享主机（某Linux系统），另一个为VPS（Windows 2003 Server）。<br>
+数据库什么的都还不算问题，写个PHP，来个while循环下就好，可其中还有大约5万张1M一下的图片需要迁移。</p>
+<p>想了各种办法，真感觉脑细胞都一下死伤过半。</p>
+<h3 id="最初作法">最初作法</h3>
+<p>因为这项目是构架于Yii的，所以就用内置的<code>ConsoleCommand</code>写了一个迁移程序，下载部分用PEAR库中的<code>HTTP_Request2</code>来实现。可运行了近一个小时，看了下结果才不到1000张。毕竟HTTP请求来回也是需要时间的，带宽再大也不行。就在想要不要来点什么多线程。这时候就想到了第二熟悉的Python。</p>
+<h3 id="开始狗逼的python过程">开始狗逼的Python过程</h3>
+<p>随手翻开了手边的书，找到了有关<code>threading</code>的部分，照着例子写了下发现难度不高，稍微改进了下配合<code>urllib2</code>很容易就实现了功能。兴致勃勃的传到服务器上，装好了Python的Win版，可<code>MySQL-Python</code>这个库死活装不上，上网搜了下居然要手动在Cygwin里编译，而且还需要<code>mysql-dev</code>这个库的支持？我又不干什么就为了这是不是玩大了点……</p>
+<h3 id="尝试一下刚上手的go">尝试一下刚上手的Go</h3>
+<p>这也是无奈之举。想到自己在x64的机子上用x86编译器build出来的二进制程序放到x86机子上，不需要什么Go runtime的直接就跑了起来，索性开始尝试一下吧。这次有经验了直接在Windows机上搞。这下可好，连MySQL都不知道怎么访问，搜到的几个库不是无法通过编译就是明确告诉我Windows不支持，哎。</p>
+<h3 id="最终结果">最终结果</h3>
+<p>折腾了大半天，本来还想再尝试一下Node.JS（因为这个完全异步，来实现多线程下载也不是难事）或者C#（但因为需要装巨大无比的.NET Framework 4，还是放弃了），但看天色也晚，估计各大快捷酒店都已经冷清了。所以想想还是别折腾了，改回最初的状态，从版本库里拉出了最早的代码，挂在服务器上慢慢下吧。反正时间长了又不扣钱，时间短了也不加钱。</p>
+<p>什么Cygwin的，Go还是Python跨平台的我是再也不相信了。<br>
+我这水品看来也就能玩玩什么PHP的，别的高级货还真玩儿不转。</p>
+</div>
+</article>
+
+
+
+    <div id="build-info">Last build hash: d278eb4</div>
+  </main>
+</div>
+</body>
+</html>

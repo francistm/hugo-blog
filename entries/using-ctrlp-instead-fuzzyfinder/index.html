@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>用 ctrlp.vim 代替 FuzzyFinder &laquo; Francis&#39; Blog</title>
+  <meta name="X-UA-Compatible" content="IE=edge">
+  <meta name="renderer" content="webkit">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+
+  
+  <link rel="stylesheet" type="text/css" href="//cdn.staticfile.org/normalize/8.0.1/normalize.css" media="all">
+  <link rel="stylesheet" type="text/css" href="http://blog.francistm.com/sass/layout.min.3da37313df24a7bb1b567804a82404314f9f79eeab32a1b2d5d3a259e3b19df7.css" integrity="sha256-PaNzE98kp7sbVngEqCQEMU&#43;fee6rMqGy1dOiWeOxnfc=" media="all">
+</head>
+<body>
+<div id="wrapper">
+  <nav><div id="logo"><a href="http://blog.francistm.com">
+    <img src="http://blog.francistm.com/images/logo.57b05cbe9761dcb66b57bafe41995425ea421c67327ad163a5a909c4cf4436de.png" integrity="sha256-V7Bcvpdh3LZrV7r&#43;QZlUJepCHGcyetFjpakJxM9ENt4=" alt="Francis&#39; Blog" />
+  </a>
+</div>
+
+<ul class="nav">
+  
+  
+    
+      <li>
+    
+
+      <a href="/">首页</a>
+    </li>
+  
+    
+      <li>
+    
+
+      <a href="/entries/">日志归档</a>
+    </li>
+  
+    
+      <li>
+    
+
+      <a href="/links/">友情链接</a>
+    </li>
+  
+</ul>
+</nav>
+  <main>
+
+<article class="entries-single">
+  <h1 class="page-title">用 ctrlp.vim 代替 FuzzyFinder</h1>
+
+  <div class="page-meta">
+    发表于 2016-02-12 18:04:27，
+    最后更新 2020-02-02 18:42:24
+  </div>
+
+  <div class="content markdown"><p>话说VIM也用了一段时间，可是进展还不是大，一直被我当作一个<code>文本编辑器</code>在是用，惭愧唉。</p>
+<p>本来在搞Yii项目，后来觉得PHP是误入歧途所以现在转投了我大Rails的旗下。Ruby都这么爽了不把VIM折腾爽了怎么对得起他呢。</p>
+<p>本来用的<code>FuzzyFinder</code>来快速定位文件（这个功能完全是用了<code>Sublime Text 2</code>之后才发现又多么的高效），可是</p>
+<ol>
+<li>速度有时候会比较慢</li>
+<li>如果其他地方更改了文件名或文件夹则需要刷新缓存，这时又会卡一下</li>
+<li>再者如果打开了项目中子目录下的某个文件，则还需要手动跳会项目根目录</li>
+</ol>
+<p>这样让我折腾了好久，才算是勉强能正常使用。无意间在Rails的论坛发现有人介绍<code>ctrlp</code>（观看地址 <a href="http://happycasts.net/episodes/64">http://happycasts.net/episodes/64</a> ）遂立刻动手，真的是很爽。</p>
+<p>因为我的vimfiles已经通过Git实现控制，所以直接添加他的库为<code>submodule</code>既可。</p>
+<pre><code>git submodule add https://github.com/kien/ctrlp.vim.git bundle/ctrlp.vim
+</code></pre>
+<p>其余参照 <a href="http://kien.github.io/ctrlp.vim/#installation">http://kien.github.io/ctrlp.vim/#installation</a> 所提示，在 <code>.vimrc</code> 中添加</p>
+<pre><code>set runtimepath^=~/.vim/bundle/ctrlp.vim
+</code></pre>
+<p>即可正常使用。默认快捷键<code>Ctrl+P</code>。</p>
+<p>一个字，爽。项目自动通过<code>.git</code>, <code>.hg</code>, <code>.svn</code> 等来判断根目录，随时都可以自由的在项目中查找文件；配置忽略设置也简单了很多。</p>
+<blockquote>
+<p>我的vimfiles: <a href="https://github.com/francistm/vim-files">https://github.com/francistm/vim-files</a></p>
+</blockquote>
+</div>
+</article>
+
+
+
+    <div id="build-info">Last build hash: d278eb4</div>
+  </main>
+</div>
+</body>
+</html>

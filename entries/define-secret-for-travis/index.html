@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>Travis-CI 中定义敏感变量 &laquo; Francis&#39; Blog</title>
+  <meta name="X-UA-Compatible" content="IE=edge">
+  <meta name="renderer" content="webkit">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+
+  
+  <link rel="stylesheet" type="text/css" href="//cdn.staticfile.org/normalize/8.0.1/normalize.css" media="all">
+  <link rel="stylesheet" type="text/css" href="http://blog.francistm.com/sass/layout.min.3da37313df24a7bb1b567804a82404314f9f79eeab32a1b2d5d3a259e3b19df7.css" integrity="sha256-PaNzE98kp7sbVngEqCQEMU&#43;fee6rMqGy1dOiWeOxnfc=" media="all">
+</head>
+<body>
+<div id="wrapper">
+  <nav><div id="logo"><a href="http://blog.francistm.com">
+    <img src="http://blog.francistm.com/images/logo.57b05cbe9761dcb66b57bafe41995425ea421c67327ad163a5a909c4cf4436de.png" integrity="sha256-V7Bcvpdh3LZrV7r&#43;QZlUJepCHGcyetFjpakJxM9ENt4=" alt="Francis&#39; Blog" />
+  </a>
+</div>
+
+<ul class="nav">
+  
+  
+    
+      <li>
+    
+
+      <a href="/">首页</a>
+    </li>
+  
+    
+      <li>
+    
+
+      <a href="/entries/">日志归档</a>
+    </li>
+  
+    
+      <li>
+    
+
+      <a href="/links/">友情链接</a>
+    </li>
+  
+</ul>
+</nav>
+  <main>
+
+<article class="entries-single">
+  <h1 class="page-title">Travis-CI 中定义敏感变量</h1>
+
+  <div class="page-meta">
+    发表于 2016-02-12 18:05:56，
+    最后更新 2020-02-02 18:42:24
+  </div>
+
+  <div class="content markdown"><p>最近无聊，折腾了一下Rails中上传文件到<a href="http://www.qiniu.com">七牛</a>的功能。</p>
+<p>因为<code>config/initializer/qiniu-rs.rb</code>文件（这里强烈吐槽一下，为什么其他文件都是以<code>_</code>分割单词，唯独七牛以<code>-</code>呢，好别扭看起来）中包含敏感的两个密钥值，所以就没有加入到版本库中。</p>
+<p>本地测试时自己新建一个文件，讲七牛后台的两个值写进去即可，到了Travis-CI上就不行了，只可以完整的保留版本库中的文件，无法自行添加。直接将这两个值写到版本库里也是非常不合适的，毕竟账号可是自己的，网站也是自己的，不能瞎折腾。</p>
+<p>Google上搜了一顿后，发现有一个<code>travis</code>的 <a href="https://rubygems.org/gems/travis">gem</a>，可以提供一个<code>encrypt</code>的方法。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">gem install travis
+</code></pre></div><p>安装完成后运行</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">travis encrypt -a env.global AK<span style="color:#f92672">=</span>ACCESS_KEY SK<span style="color:#f92672">=</span>SECRET_KEY<span style="color:#e6db74">`</span>
+</code></pre></div><p>会自动将加密后的环境变量加入到<code>.travis.yml</code>中</p>
+<p>在<code>before_script</code>中即可直接使用这两个变量了，例如</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">echo <span style="color:#e6db74">&#34;</span>$AK<span style="color:#e6db74">:</span>$AF<span style="color:#e6db74">&#34;</span> &gt; ./config
+</code></pre></div><p>话说经过各种折腾，Travis-CI还是相当方便的！</p>
+<blockquote>
+<p>七牛的测试账号可以在 <a href="http://developer.qiniu.com/docs/v6/kb/testing.html#upload">这里</a> 里找到</p>
+</blockquote>
+</div>
+</article>
+
+
+
+    <div id="build-info">Last build hash: d278eb4</div>
+  </main>
+</div>
+</body>
+</html>

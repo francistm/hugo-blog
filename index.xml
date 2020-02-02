@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>首页 on Francis&#39; Blog</title>
+    <link>http://blog.francistm.com/</link>
+    <description>Recent content in 首页 on Francis&#39; Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    
+	<atom:link href="http://blog.francistm.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>新年新气象 (4)</title>
+      <link>http://blog.francistm.com/entries/introduct-2019/</link>
+      <pubDate>Mon, 31 Dec 2018 00:00:00 +0800</pubDate>
+      
+      <guid>http://blog.francistm.com/entries/introduct-2019/</guid>
+      <description>休息的时间总是过得很快，而上班就显得有些熬日子。18年除了工作的事情，感觉什么也没有干。 EVE 因为与FRT的盟友关系直接弃坑了，眼不见心不烦也还</description>
+    </item>
+    
+    <item>
+      <title>新年新气象 (3)</title>
+      <link>http://blog.francistm.com/entries/introduct-2018/</link>
+      <pubDate>Sun, 31 Dec 2017 00:00:00 +0800</pubDate>
+      
+      <guid>http://blog.francistm.com/entries/introduct-2018/</guid>
+      <description>又过了一年，真是一年不如一年。 钱还是没赚上；技术也没什么提升；EVE玩的更是惨，所以导致今年连Blog都没得写了。 比特币今年的行情彻底错过了</description>
+    </item>
+    
+    <item>
+      <title>从未见过如此厚颜无耻之人</title>
+      <link>http://blog.francistm.com/entries/never-seen-such-a-shameless-men/</link>
+      <pubDate>Wed, 24 May 2017 00:00:00 +0800</pubDate>
+      
+      <guid>http://blog.francistm.com/entries/never-seen-such-a-shameless-men/</guid>
+      <description>今年比较忙，新的城市，新的工作，压力自然比较大。 EVE自然上线的时间也比较少了。可是没想到 PIXELS 从 Vanguard 撤了，我在老蔡的EA8混迹了一个月之后发现没</description>
+    </item>
+    
+    <item>
+      <title>新年新气象 (2)</title>
+      <link>http://blog.francistm.com/entries/introduct-2017/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0800</pubDate>
+      
+      <guid>http://blog.francistm.com/entries/introduct-2017/</guid>
+      <description>终于熬完了2016年，可以今年除了好好研究了下EVE再什么也没干呐…… 外包干了几个，可钱是一点没赚上。 Angular 2, React 什么的也算是借着光入了个门； Laravel 5.2</description>
+    </item>
+    
+    <item>
+      <title>升级至 Rails 5.0</title>
+      <link>http://blog.francistm.com/entries/upgrade-to-rails-5/</link>
+      <pubDate>Sun, 09 Oct 2016 00:00:00 +0800</pubDate>
+      
+      <guid>http://blog.francistm.com/entries/upgrade-to-rails-5/</guid>
+      <description>眼看着今年也没搞出来什么东西，实在惭愧。就升级了下Rails5，体验下新功能吧。Blog功能过于简陋，所以最值得学习的ActionCable</description>
+    </item>
+    
+    <item>
+      <title>联盟首次CTA</title>
+      <link>http://blog.francistm.com/entries/first-cta-in-alliances/</link>
+      <pubDate>Fri, 15 Jul 2016 00:00:00 +0800</pubDate>
+      
+      <guid>http://blog.francistm.com/entries/first-cta-in-alliances/</guid>
+      <description>一不小心又长了一岁，啥事儿也没干成。 家里面的事情倒是基本处理完成了。一切稳定，基本上回归正轨。 也是巧合，刚好这一天刷够了ISK，晚上也睡不着</description>
+    </item>
+    
+    <item>
+      <title>微信公众号 Angular2 实测</title>
+      <link>http://blog.francistm.com/entries/ng2-in-mp-wechat-testdrive/</link>
+      <pubDate>Sat, 25 Jun 2016 00:00:00 +0800</pubDate>
+      
+      <guid>http://blog.francistm.com/entries/ng2-in-mp-wechat-testdrive/</guid>
+      <description>最近干了一个微信公众号的活儿。 业内现在好像挺流行React的，不过看了几天发现根本不适合我，毕竟单靠一个React似乎还搞不出SPA，不像N</description>
+    </item>
+    
+    <item>
+      <title>Go中解析JSON</title>
+      <link>http://blog.francistm.com/entries/parse-json-in-golang/</link>
+      <pubDate>Mon, 21 Mar 2016 00:00:00 +0800</pubDate>
+      
+      <guid>http://blog.francistm.com/entries/parse-json-in-golang/</guid>
+      <description>最近做了一个小的Socket应用，考虑到C已经忘干净了，Ruby解释型语言又显不出档次，就试试Go吧。 Socket中的数据想想什么方法比较好</description>
+    </item>
+    
+    <item>
+      <title>吐鲁番自驾一日游</title>
+      <link>http://blog.francistm.com/entries/self-drive-travle-to-turpan/</link>
+      <pubDate>Sun, 28 Feb 2016 00:00:00 +0800</pubDate>
+      
+      <guid>http://blog.francistm.com/entries/self-drive-travle-to-turpan/</guid>
+      <description>人生中的第一个官司上周开庭完毕完毕，刚好朋友的华为HCNA考试也过了。所以大家决定出去放松一下。考虑到只有一天时间，周围时间允许且有价值的地</description>
+    </item>
+    
+    <item>
+      <title>新年新气象</title>
+      <link>http://blog.francistm.com/entries/introduct-2016/</link>
+      <pubDate>Sun, 14 Feb 2016 00:00:00 +0800</pubDate>
+      
+      <guid>http://blog.francistm.com/entries/introduct-2016/</guid>
+      <description>一晃又过去了大半年，新年也接近尾声。一想这就过完年了，心中又出现莫名的伤感。 这半年发生了不少事，以至于生活中也弄得乱七八糟，一塌糊涂。 新的一</description>
+    </item>
+    
+    <item>
+      <title>用 Supervisor 管理 Puma 进程</title>
+      <link>http://blog.francistm.com/entries/use-supervisor-to-manage-puma/</link>
+      <pubDate>Thu, 30 Jul 2015 00:00:00 +0800</pubDate>
+      
+      <guid>http://blog.francistm.com/entries/use-supervisor-to-manage-puma/</guid>
+      <description>不得不说，以前一直是直接用 capistrano 来跑 puma ，这样的做法实在是太乱搞了。 鉴于每次更新程序，重启 puma 的时候，你都不知道他是不是挂掉了，今天下了个狠心，用了</description>
+    </item>
+    
+    <item>
+      <title>又老了一岁</title>
+      <link>http://blog.francistm.com/entries/birthday-2015/</link>
+      <pubDate>Wed, 15 Jul 2015 00:00:00 +0800</pubDate>
+      
+      <guid>http://blog.francistm.com/entries/birthday-2015/</guid>
+      <description>一晃都好久没写过一个字了，确实不太合适。借着今天刚好生日就随便发几个字上来吧。 工作什么的就不多说了，一直都是那么有挑战性，真是自虐啊。 EVE</description>
+    </item>
+    
+    <item>
+      <title>万网共享主机上的Drupal实测</title>
+      <link>http://blog.francistm.com/entries/drupal-on-net-cn/</link>
+      <pubDate>Sun, 11 Jan 2015 00:00:00 +0800</pubDate>
+      
+      <guid>http://blog.francistm.com/entries/drupal-on-net-cn/</guid>
+      <description>最近被迫开始搞上了Drupal，原因其实也挺扯的。 一个叫安大XXX的垃圾公司，搞了N多套具有针对性的ASP的CMS系统（没错，在2015年能</description>
+    </item>
+    
+    <item>
+      <title>2014的最后一周</title>
+      <link>http://blog.francistm.com/entries/last-week-of-2014/</link>
+      <pubDate>Sun, 28 Dec 2014 00:00:00 +0800</pubDate>
+      
+      <guid>http://blog.francistm.com/entries/last-week-of-2014/</guid>
+      <description>这一年过的说快也快，说慢也慢。因为来了南边，所以感觉整年被划为了两个大部分。 第一部分还是过的很快的，各种经历也很丰富，也因为自己的性格，发生</description>
+    </item>
+    
+    <item>
+      <title>拿下了首个KM</title>
+      <link>http://blog.francistm.com/entries/get-my-first-km/</link>
+      <pubDate>Mon, 04 Aug 2014 00:00:00 +0800</pubDate>
+      
+      <guid>http://blog.francistm.com/entries/get-my-first-km/</guid>
+      <description>最近没什么东西写，因为我在研究EVE。 奋战了也有近两个月了，终于在舰队6人的帮助下，拿到了首个KM（虽然没我什么事，我就是纯粹打酱油去了）。</description>
+    </item>
+    
+    <item>
+      <title>近日杂谈（5-27）</title>
+      <link>http://blog.francistm.com/entries/about-these-days-2014-5-27/</link>
+      <pubDate>Tue, 27 May 2014 00:00:00 +0800</pubDate>
+      
+      <guid>http://blog.francistm.com/entries/about-these-days-2014-5-27/</guid>
+      <description>不知道什么原因，反正很不想上班，就离开了原有的岗位，又回到了待业状态。 最近忙着搞搞Rails项目；MGS4已经二周目了，就等着拿白金杯了（进</description>
+    </item>
+    
+    <item>
+      <title>显然我是在扯淡</title>
+      <link>http://blog.francistm.com/entries/apparently-i-am-talking-about-something-crap/</link>
+      <pubDate>Sat, 29 Mar 2014 00:00:00 +0800</pubDate>
+      
+      <guid>http://blog.francistm.com/entries/apparently-i-am-talking-about-something-crap/</guid>
+      <description>不合群的毛病又犯了。 回想已经不当程序员有些年头了，但一直还相信着大多数的程序员都相信自由，相信开放。很多社区化的东西，像 Yii, Ruby on Rails 甚至 Linux 都是以</description>
+    </item>
+    
+    <item>
+      <title>Ruby on Rails 中的 i18n 解决</title>
+      <link>http://blog.francistm.com/entries/i18n-solution-in-ruby-on-rails/</link>
+      <pubDate>Sun, 16 Mar 2014 00:00:00 +0800</pubDate>
+      
+      <guid>http://blog.francistm.com/entries/i18n-solution-in-ruby-on-rails/</guid>
+      <description>不得不说，RoR还是相当完美的，真的所谓能想到的功能他都提供了。 最近在搞老陈的站，考虑到外贸的原因所以要搞i18n功能。 需要解决： 模型中字段</description>
+    </item>
+    
+    <item>
+      <title>冬天的最后一场雪</title>
+      <link>http://blog.francistm.com/entries/the-last-snow-of-winter-in-2014/</link>
+      <pubDate>Tue, 11 Mar 2014 00:00:00 +0800</pubDate>
+      
+      <guid>http://blog.francistm.com/entries/the-last-snow-of-winter-in-2014/</guid>
+      <description>可能说冬天有些不合适，因为已经三月份了。可是乌鲁木齐的气候就是这么的让人无法接受。久违的阳光终于出现了，可惜依然照在了满地的白雪上。好不容易</description>
+    </item>
+    
+    <item>
+      <title>追寻 Cagetest 的招聘信息</title>
+      <link>http://blog.francistm.com/entries/how-to-join-cagetest/</link>
+      <pubDate>Tue, 18 Feb 2014 00:00:00 +0800</pubDate>
+      
+      <guid>http://blog.francistm.com/entries/how-to-join-cagetest/</guid>
+      <description>无意中看到了一个网站，CAGETEST ，高级渗透测试。听名字是挺高端，大气，上档次的。页面最下角找到了一个Join Us的链接，很有兴趣的看看</description>
+    </item>
+    
+    <item>
+      <title>春节结束，开始工作</title>
+      <link>http://blog.francistm.com/entries/return-to-work-of-2014/</link>
+      <pubDate>Thu, 13 Feb 2014 00:00:00 +0800</pubDate>
+      
+      <guid>http://blog.francistm.com/entries/return-to-work-of-2014/</guid>
+      <description>春节就这样不经意的过去了，好像什么还都没有干就完了一样。 回想下除了着迷于Metal Gear Rising中，再没有什么可回忆的事情了。 突然发现上班居</description>
+    </item>
+    
+    <item>
+      <title>这智商真捉鸡啊</title>
+      <link>http://blog.francistm.com/entries/so-worry-about-the-iq/</link>
+      <pubDate>Tue, 07 Jan 2014 00:00:00 +0800</pubDate>
+      
+      <guid>http://blog.francistm.com/entries/so-worry-about-the-iq/</guid>
+      <description>实在是没话说了。 某组织现在首要的真不应该是加强互联网管理，而是真的应该提高某些群体的智力水平。</description>
+    </item>
+    
+    <item>
+      <title>2014的元旦</title>
+      <link>http://blog.francistm.com/entries/introduct-2014/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0800</pubDate>
+      
+      <guid>http://blog.francistm.com/entries/introduct-2014/</guid>
+      <description>一晃发现Blog最早的内容已经可以追溯到2012年了，这一次我竟然坚持了这么久，真的我自己都没有想到…… 周围的人也都开始上班了，各自有各自的</description>
+    </item>
+    
+    <item>
+      <title>Travis-CI 中定义敏感变量</title>
+      <link>http://blog.francistm.com/entries/define-secret-for-travis/</link>
+      <pubDate>Sun, 15 Dec 2013 00:00:00 +0800</pubDate>
+      
+      <guid>http://blog.francistm.com/entries/define-secret-for-travis/</guid>
+      <description>最近无聊，折腾了一下Rails中上传文件到七牛的功能。 因为config/initializer/qiniu-rs.rb文件（这里强烈吐槽一下</description>
+    </item>
+    
+    <item>
+      <title>KSP 0.22 中安装 Mechjeb</title>
+      <link>http://blog.francistm.com/entries/install-mj-in-ksp-022/</link>
+      <pubDate>Thu, 17 Oct 2013 00:00:00 +0800</pubDate>
+      
+      <guid>http://blog.francistm.com/entries/install-mj-in-ksp-022/</guid>
+      <description>今天开Steam，收到了 Kerbal Space Program 0.22 版的更新。 2013年10月27日补充 Mechjeb已经发布2.1版，已经官方兼容 KSP 0.22 版了。 最大的改变就是原先</description>
+    </item>
+    
+    <item>
+      <title>IE6什么的都不用担心了</title>
+      <link>http://blog.francistm.com/entries/there-is-no-need-to-worry-about-ie6/</link>
+      <pubDate>Tue, 15 Oct 2013 00:00:00 +0800</pubDate>
+      
+      <guid>http://blog.francistm.com/entries/there-is-no-need-to-worry-about-ie6/</guid>
+      <description>很久以前吧，接了一个外包。 这外包吧，面对的用户层面都是工厂的人，所以可以肯定对于计算机网络的了解不是很丰富，所以考虑到浏览器的兼容问题，很多</description>
+    </item>
+    
+    <item>
+      <title>又是一年中秋</title>
+      <link>http://blog.francistm.com/entries/mid-autumn-2013/</link>
+      <pubDate>Fri, 20 Sep 2013 00:00:00 +0800</pubDate>
+      
+      <guid>http://blog.francistm.com/entries/mid-autumn-2013/</guid>
+      <description>想想时间过的好像挺快，上一个中秋我已经完全没有印象了。 既然已经选择了这样的生活，那就只能继续走下去了。 生活还是这么的凄惨，日子还得一天天的熬</description>
+    </item>
+    
+    <item>
+      <title>终于可以流畅的玩AA3了</title>
+      <link>http://blog.francistm.com/entries/finally-play-aa3-easy-and-smooth/</link>
+      <pubDate>Sun, 15 Sep 2013 00:00:00 +0800</pubDate>
+      
+      <guid>http://blog.francistm.com/entries/finally-play-aa3-easy-and-smooth/</guid>
+      <description>武装突袭3 从Alpha版开始就入手了，虽然中途开发过程中优化不是很好，但机能差也不失为一个主要原因。 AA1时代的老卡一直硬顶着跑完了AA2，</description>
+    </item>
+    
+    <item>
+      <title>年轻人怎么都这么暴躁</title>
+      <link>http://blog.francistm.com/entries/why-younger-are-so-irritable/</link>
+      <pubDate>Thu, 06 Jun 2013 00:00:00 +0800</pubDate>
+      
+      <guid>http://blog.francistm.com/entries/why-younger-are-so-irritable/</guid>
+      <description>多的不说了，过于自信真的很吓人。 （为了保护受害人，我把ID还是去掉了）</description>
+    </item>
+    
+    <item>
+      <title>五月的黄昏</title>
+      <link>http://blog.francistm.com/entries/dusk-in-may/</link>
+      <pubDate>Sat, 25 May 2013 00:00:00 +0800</pubDate>
+      
+      <guid>http://blog.francistm.com/entries/dusk-in-may/</guid>
+      <description>2013年的乌鲁木齐气候真是奇怪，房间里阴冷潮湿，外面却阳光明媚。就好像是回到了浙江的春天。</description>
+    </item>
+    
+    <item>
+      <title>用 ctrlp.vim 代替 FuzzyFinder</title>
+      <link>http://blog.francistm.com/entries/using-ctrlp-instead-fuzzyfinder/</link>
+      <pubDate>Thu, 23 May 2013 00:00:00 +0800</pubDate>
+      
+      <guid>http://blog.francistm.com/entries/using-ctrlp-instead-fuzzyfinder/</guid>
+      <description>话说VIM也用了一段时间，可是进展还不是大，一直被我当作一个文本编辑器在是用，惭愧唉。 本来在搞Yii项目，后来觉得PHP是误入歧途所以现在转</description>
+    </item>
+    
+    <item>
+      <title>网站终于上线了</title>
+      <link>http://blog.francistm.com/entries/finally-get-lh737-online/</link>
+      <pubDate>Fri, 12 Apr 2013 00:00:00 +0800</pubDate>
+      
+      <guid>http://blog.francistm.com/entries/finally-get-lh737-online/</guid>
+      <description>真心的不容易，上线当晚我激动的差点都哭了。整整历时一年，中间磕磕碰碰，能走到今天太不容易了。 说实话这网站没什么创意，前台设计都是客户方面给定</description>
+    </item>
+    
+    <item>
+      <title>真的这么背么？</title>
+      <link>http://blog.francistm.com/entries/why-bad-luck-always-with-me/</link>
+      <pubDate>Tue, 02 Apr 2013 00:00:00 +0800</pubDate>
+      
+      <guid>http://blog.francistm.com/entries/why-bad-luck-always-with-me/</guid>
+      <description>唉，一个月开坏两辆车，捡回来两次命，就是不知道还有没有第三次…… 我还能说什么呢？ 我只想知道，什么时候能别走霉运了……</description>
+    </item>
+    
+    <item>
+      <title>再度换Blog</title>
+      <link>http://blog.francistm.com/entries/change-to-another-application-again/</link>
+      <pubDate>Mon, 18 Mar 2013 00:00:00 +0800</pubDate>
+      
+      <guid>http://blog.francistm.com/entries/change-to-another-application-again/</guid>
+      <description>唉，最近又犯了折腾的毛病，PHP + MySQL 似乎已经不能满足我了，PHP写了这么久实在没什么好感（关于语言设计上的问题我也没资格妄加评论），但对于P</description>
+    </item>
+    
+    <item>
+      <title>近日杂谈（1-29）</title>
+      <link>http://blog.francistm.com/entries/about-these-days-2013-1-29/</link>
+      <pubDate>Tue, 29 Jan 2013 00:00:00 +0800</pubDate>
+      
+      <guid>http://blog.francistm.com/entries/about-these-days-2013-1-29/</guid>
+      <description>2013年还是到了，唉。期待的2012世界末日终究没有到来，这一切的一切，真是太让人失望了。 依旧没有工作，每天瞎逼混。代码还是那水平，唯独有</description>
+    </item>
+    
+    <item>
+      <title>Macbook Air 终于修好了</title>
+      <link>http://blog.francistm.com/entries/finally-fixed-my-mba/</link>
+      <pubDate>Tue, 18 Dec 2012 00:00:00 +0800</pubDate>
+      
+      <guid>http://blog.francistm.com/entries/finally-fixed-my-mba/</guid>
+      <description>真不想说，人品有时候能这么差，哎。 前面的三星R20 Plus用了这么久，写了这么多代码，看了这么多的片，就被老爸一杯水彻底报销了，哎。 可后来入</description>
+    </item>
+    
+    <item>
+      <title>近日杂谈 (11-20)</title>
+      <link>http://blog.francistm.com/entries/about-this-days-2012-11-20/</link>
+      <pubDate>Tue, 20 Nov 2012 00:00:00 +0800</pubDate>
+      
+      <guid>http://blog.francistm.com/entries/about-this-days-2012-11-20/</guid>
+      <description>最近上网上的少多了，因为我去搞测量了…… 每天除了全站仪就是RTK，两条腿已经感觉不是自己腿了。 对于做了半年的项目就快要上线的时候，告诉我又要</description>
+    </item>
+    
+    <item>
+      <title>这竞争太激烈了</title>
+      <link>http://blog.francistm.com/entries/too-much-competition-in-internet/</link>
+      <pubDate>Thu, 13 Sep 2012 00:00:00 +0800</pubDate>
+      
+      <guid>http://blog.francistm.com/entries/too-much-competition-in-internet/</guid>
+      <description>互联网这行竞争真的太激烈了，哎。 看到某个牛人做出了Gitshell ；没几天又发现了个叫集盒的站，大家效率都太高了。 这时候默默地想起了一直内测</description>
+    </item>
+    
+    <item>
+      <title>又换程序了</title>
+      <link>http://blog.francistm.com/entries/change-to-another-app-again/</link>
+      <pubDate>Tue, 11 Sep 2012 00:00:00 +0800</pubDate>
+      
+      <guid>http://blog.francistm.com/entries/change-to-another-app-again/</guid>
+      <description>哎，由于Willerce哥发来了AppFog，这种云平台还是第一次接触，好有诱惑力啊。 Github上建了个项目，本来想用Yaf来的，结果发现</description>
+    </item>
+    
+    <item>
+      <title>试玩了下MGS4</title>
+      <link>http://blog.francistm.com/entries/tried-mgs4/</link>
+      <pubDate>Sun, 09 Sep 2012 00:00:00 +0800</pubDate>
+      
+      <guid>http://blog.francistm.com/entries/tried-mgs4/</guid>
+      <description>首先得感谢魔同学，让我有机会体验了下PS3。 话说机子的UI各方面都做的不错，手柄的电池也很不错。 最好的一点还是这玩意儿不分区，所以不用担心买</description>
+    </item>
+    
+    <item>
+      <title>再也不相信什么跨平台了</title>
+      <link>http://blog.francistm.com/entries/do-not-trust-cross-platform-anymore/</link>
+      <pubDate>Sun, 02 Sep 2012 00:00:00 +0800</pubDate>
+      
+      <guid>http://blog.francistm.com/entries/do-not-trust-cross-platform-anymore/</guid>
+      <description>最近在搞一个项目（其实也有一段时间了，改改删删，需求天天变；唯一不变的就是预算），有个最终需求就是需要把数据从旧版程序迁移过来。而个程序所在</description>
+    </item>
+    
+    <item>
+      <title>这也算传统节日</title>
+      <link>http://blog.francistm.com/entries/double-seventh-festival/</link>
+      <pubDate>Fri, 24 Aug 2012 00:00:00 +0800</pubDate>
+      
+      <guid>http://blog.francistm.com/entries/double-seventh-festival/</guid>
+      <description>这节日话说也算中国传统节日，就如同经常扯淡时会谈论起的“中国传统美德”一样。 但我只想说，就如同推上看到的一句话一样：我觉得最后除了清明节，所</description>
+    </item>
+    
+    <item>
+      <title>近日杂谈 (8-14)</title>
+      <link>http://blog.francistm.com/entries/about-this-days-8-14/</link>
+      <pubDate>Tue, 14 Aug 2012 00:00:00 +0800</pubDate>
+      
+      <guid>http://blog.francistm.com/entries/about-this-days-8-14/</guid>
+      <description>这段日子过的可谓浑浑噩噩。 每天出了起床开机编码，晚上关机睡觉，中间可能会有吃饭、出门、逛街等等小插曲，再就没有别的事情了。似乎真的散漫惯了，</description>
+    </item>
+    
+    <item>
+      <title>维尔福：关于我在这的一切 (2)</title>
+      <link>http://blog.francistm.com/entries/valve-how-i-got-here-what-its-like-and-what-im-doing-2/</link>
+      <pubDate>Fri, 03 Aug 2012 00:00:00 +0800</pubDate>
+      
+      <guid>http://blog.francistm.com/entries/valve-how-i-got-here-what-its-like-and-what-im-doing-2/</guid>
+      <description>接上一篇 [翻译]维尔福：关于我在这的一切 (1) 维尔福是与众不同的 这三十年间，我在许多公司中，在各种环境下工作着。我曾经当过软件顾问，还有杂志书看</description>
+    </item>
+    
+    <item>
+      <title>又老了一岁</title>
+      <link>http://blog.francistm.com/entries/birthday-2012/</link>
+      <pubDate>Sun, 15 Jul 2012 00:00:00 +0800</pubDate>
+      
+      <guid>http://blog.francistm.com/entries/birthday-2012/</guid>
+      <description>哎，又老了一岁，居然22了。 人生十有八九不如意。 好在周围还有关心我，愿意帮助我的一群人，在此真心的感谢一下。 真的欠大家太多，以后有机会，有能</description>
+    </item>
+    
+    <item>
+      <title>屁股决定大脑</title>
+      <link>http://blog.francistm.com/entries/use-ass-to-make-choice/</link>
+      <pubDate>Thu, 05 Jul 2012 00:00:00 +0800</pubDate>
+      
+      <guid>http://blog.francistm.com/entries/use-ass-to-make-choice/</guid>
+      <description>外包这活儿真他妈不是人干的，简直就是出力不讨好。 不知道自己还能忍多久，吐槽一下吧。 永远不可能和客户达成共识 他心中的目标是什么样子只有他自己知</description>
+    </item>
+    
+    <item>
+      <title>维尔福：关于我在这的一切 (1)</title>
+      <link>http://blog.francistm.com/entries/valve-how-i-got-here-what-its-like-and-what-im-doing-1/</link>
+      <pubDate>Fri, 29 Jun 2012 00:00:00 +0800</pubDate>
+      
+      <guid>http://blog.francistm.com/entries/valve-how-i-got-here-what-its-like-and-what-im-doing-1/</guid>
+      <description>原文链接： http://blogs.valvesoftware.com/abrash/valve-how-i-got-here-what-its-like-and-what-im-doing-2 一切开始于Snow Crash。 如果我没有读过它，并且深陷于 Metaverse 这个想法，如果它没有让我意识到网络化3D是多么的真实，如果我从没有想</description>
+    </item>
+    
+    <item>
+      <title>近日杂记 (6-27)</title>
+      <link>http://blog.francistm.com/entries/about-this-days-6-27/</link>
+      <pubDate>Wed, 27 Jun 2012 00:00:00 +0800</pubDate>
+      
+      <guid>http://blog.francistm.com/entries/about-this-days-6-27/</guid>
+      <description>好消息是，奋斗了大半年，终于挤进了“中华人民共和国机动车驾驶员”的行列。不过依然处于整个行业中的最底层，就像我这个人一样。 空间上次出了一次问</description>
+    </item>
+    
+    <item>
+      <title>好人当的好，电脑修到老</title>
+      <link>http://blog.francistm.com/entries/to-be-a-good-man-to-repair-the-computer/</link>
+      <pubDate>Tue, 01 May 2012 00:00:00 +0800</pubDate>
+      
+      <guid>http://blog.francistm.com/entries/to-be-a-good-man-to-repair-the-computer/</guid>
+      <description>实在无语了，我已经很久不对陌生人说我会修电脑，这句话真的不敢乱讲。 如果有兴趣，可以参考这个为何你应该假装自己是一个电脑白痴。 拜托，我怎么会知</description>
+    </item>
+    
+    <item>
+      <title>为什么现在的论坛都不能删帖</title>
+      <link>http://blog.francistm.com/entries/why-forum-cannot-remove-my-own-post/</link>
+      <pubDate>Sun, 22 Apr 2012 00:00:00 +0800</pubDate>
+      
+      <guid>http://blog.francistm.com/entries/why-forum-cannot-remove-my-own-post/</guid>
+      <description>不知道是谁带的头（估计是那个叫V2EX的高端社区），这年头的论坛似乎都采用“限时编辑，不能删帖”这种做法了。 我承认我不是什么高端用户，三俗的</description>
+    </item>
+    
+    <item>
+      <title>什么才是真正的朋友</title>
+      <link>http://blog.francistm.com/entries/what-is-the-real-friend/</link>
+      <pubDate>Mon, 16 Apr 2012 00:00:00 +0800</pubDate>
+      
+      <guid>http://blog.francistm.com/entries/what-is-the-real-friend/</guid>
+      <description>最近生了一场大病，虽然不说危及性命，但由于其需要很长的时间才能康复，我也受了不少折磨。 每天最纠结的事情居然成了晚上因为剧痒剧痛无法入睡。因为</description>
+    </item>
+    
+    <item>
+      <title>又成了无业游民</title>
+      <link>http://blog.francistm.com/entries/lose-job-again/</link>
+      <pubDate>Tue, 27 Mar 2012 00:00:00 +0800</pubDate>
+      
+      <guid>http://blog.francistm.com/entries/lose-job-again/</guid>
+      <description>这应该是第二次失业吧。变成无业游民的感觉其实还是不错的，可以体会到久违的自由感（虽然只不自由了一个月 = =!），不用在看着表过日子。 春天似乎到</description>
+    </item>
+    
+    <item>
+      <title>部署微软的平台是不是特别的贵</title>
+      <link>http://blog.francistm.com/entries/is-microsoft-platform-prohibitively-expensive-for-large-scale-web-deployment/</link>
+      <pubDate>Thu, 01 Mar 2012 00:00:00 +0800</pubDate>
+      
+      <guid>http://blog.francistm.com/entries/is-microsoft-platform-prohibitively-expensive-for-large-scale-web-deployment/</guid>
+      <description>原文链接：http://www.quora.com/Is-Microsofts-platform-prohibitively-expensi</description>
+    </item>
+    
+    <item>
+      <title>近日杂记 (2-26)</title>
+      <link>http://blog.francistm.com/entries/about-this-days-2-26/</link>
+      <pubDate>Sun, 26 Feb 2012 00:00:00 +0800</pubDate>
+      
+      <guid>http://blog.francistm.com/entries/about-this-days-2-26/</guid>
+      <description>换了新的Blog，尤其是自己用的以后，就很有写作欲望。 但平时看书少，最多也就是手册API，所以实在写不出什么内容，书到用时方恨少啊。 上班已经</description>
+    </item>
+    
+    <item>
+      <title>工作的这几天</title>
+      <link>http://blog.francistm.com/entries/several-working-days/</link>
+      <pubDate>Mon, 20 Feb 2012 00:00:00 +0800</pubDate>
+      
+      <guid>http://blog.francistm.com/entries/several-working-days/</guid>
+      <description>不知道为什么，突然找了份半正式的工作，或许真的是每天面对电脑太无聊了吧～ 给朋友们一说完我去从事了服务性行业而非技术型的时候，居然没有人相信，</description>
+    </item>
+    
+    <item>
+      <title>再次重新开始Blog</title>
+      <link>http://blog.francistm.com/entries/hello-world/</link>
+      <pubDate>Sun, 19 Feb 2012 00:00:00 +0800</pubDate>
+      
+      <guid>http://blog.francistm.com/entries/hello-world/</guid>
+      <description>鉴于Wordpress已经烂大街，而且真的不适合我这样喜欢折腾的人，所以还是抛弃了。 再加上VPS的性能不是很好，跑个nginx＋php5-f</description>
+    </item>
+    
+  </channel>
+</rss>

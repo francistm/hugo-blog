@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>Ruby on Rails 中的 i18n 解决 &laquo; Francis&#39; Blog</title>
+  <meta name="X-UA-Compatible" content="IE=edge">
+  <meta name="renderer" content="webkit">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+
+  
+  <link rel="stylesheet" type="text/css" href="//cdn.staticfile.org/normalize/8.0.1/normalize.css" media="all">
+  <link rel="stylesheet" type="text/css" href="http://blog.francistm.com/sass/layout.min.3da37313df24a7bb1b567804a82404314f9f79eeab32a1b2d5d3a259e3b19df7.css" integrity="sha256-PaNzE98kp7sbVngEqCQEMU&#43;fee6rMqGy1dOiWeOxnfc=" media="all">
+</head>
+<body>
+<div id="wrapper">
+  <nav><div id="logo"><a href="http://blog.francistm.com">
+    <img src="http://blog.francistm.com/images/logo.57b05cbe9761dcb66b57bafe41995425ea421c67327ad163a5a909c4cf4436de.png" integrity="sha256-V7Bcvpdh3LZrV7r&#43;QZlUJepCHGcyetFjpakJxM9ENt4=" alt="Francis&#39; Blog" />
+  </a>
+</div>
+
+<ul class="nav">
+  
+  
+    
+      <li>
+    
+
+      <a href="/">首页</a>
+    </li>
+  
+    
+      <li>
+    
+
+      <a href="/entries/">日志归档</a>
+    </li>
+  
+    
+      <li>
+    
+
+      <a href="/links/">友情链接</a>
+    </li>
+  
+</ul>
+</nav>
+  <main>
+
+<article class="entries-single">
+  <h1 class="page-title">Ruby on Rails 中的 i18n 解决</h1>
+
+  <div class="page-meta">
+    发表于 2016-02-12 18:07:05，
+    最后更新 2020-02-02 18:42:24
+  </div>
+
+  <div class="content markdown"><p>不得不说，RoR还是相当完美的，真的所谓能想到的功能他都提供了。<br>
+最近在搞老陈的站，考虑到外贸的原因所以要搞i18n功能。</p>
+<p>需要解决：</p>
+<ol>
+<li>模型中字段的i18n</li>
+<li>根据用户的 <code>Accept-Language</code> 请求自动判断</li>
+<li>访问 en.domain.com 时，自动切换到英文站</li>
+<li>后台编辑时，添加不同语言而不添加重复产品</li>
+</ol>
+<p>其实这些问题还是没什么难度，只是我刚入行Rails水平还是太差。自己瞎折腾了一段时间，还是弄出了方案。</p>
+<ol>
+<li>用 <code>globalize</code> <a href="https://github.com/globalize/globalize">这个gem</a></li>
+<li>用 <code>http_accept_language</code> <a href="https://github.com/iain/http_accept_language">这个gem</a></li>
+<li>基于第二点，在Nginx中，设置转发后端服务器，强制加上 <code>Accept-Language en,en-US</code> 请求头部</li>
+<li>基于第一、二、三点，通过访问 <code>en.domain.com/admin</code> 和 <code>zh.domain.com/admin</code> 来自动实现locale切换，添加不同语言的内容</li>
+</ol>
+<p>基于上面几点，整个项目的核心问题得以顺利解决。<br>
+因为老板的原因，代码就不公布出来了。</p>
+</div>
+</article>
+
+
+
+    <div id="build-info">Last build hash: d278eb4</div>
+  </main>
+</div>
+</body>
+</html>

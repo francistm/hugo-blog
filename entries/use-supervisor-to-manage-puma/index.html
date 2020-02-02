@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>用 Supervisor 管理 Puma 进程 &laquo; Francis&#39; Blog</title>
+  <meta name="X-UA-Compatible" content="IE=edge">
+  <meta name="renderer" content="webkit">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+
+  
+  <link rel="stylesheet" type="text/css" href="//cdn.staticfile.org/normalize/8.0.1/normalize.css" media="all">
+  <link rel="stylesheet" type="text/css" href="http://blog.francistm.com/sass/layout.min.3da37313df24a7bb1b567804a82404314f9f79eeab32a1b2d5d3a259e3b19df7.css" integrity="sha256-PaNzE98kp7sbVngEqCQEMU&#43;fee6rMqGy1dOiWeOxnfc=" media="all">
+</head>
+<body>
+<div id="wrapper">
+  <nav><div id="logo"><a href="http://blog.francistm.com">
+    <img src="http://blog.francistm.com/images/logo.57b05cbe9761dcb66b57bafe41995425ea421c67327ad163a5a909c4cf4436de.png" integrity="sha256-V7Bcvpdh3LZrV7r&#43;QZlUJepCHGcyetFjpakJxM9ENt4=" alt="Francis&#39; Blog" />
+  </a>
+</div>
+
+<ul class="nav">
+  
+  
+    
+      <li>
+    
+
+      <a href="/">首页</a>
+    </li>
+  
+    
+      <li>
+    
+
+      <a href="/entries/">日志归档</a>
+    </li>
+  
+    
+      <li>
+    
+
+      <a href="/links/">友情链接</a>
+    </li>
+  
+</ul>
+</nav>
+  <main>
+
+<article class="entries-single">
+  <h1 class="page-title">用 Supervisor 管理 Puma 进程</h1>
+
+  <div class="page-meta">
+    发表于 2016-02-12 18:08:12，
+    最后更新 2020-02-02 18:42:24
+  </div>
+
+  <div class="content markdown"><p>不得不说，以前一直是直接用 capistrano 来跑 puma ，这样的做法实在是太乱搞了。
+鉴于每次更新程序，重启 puma 的时候，你都不知道他是不是挂掉了，今天下了个狠心，用了个进程守护程序来管着 puma 。</p>
+<p>因为小时候家里穷没钱上学，所以 bash 这种重要语言不会，只能找找简单点的了。 Ruby 圈里似乎没找到合适的东西，就直接上 Python 的吧。
+看起来 supervisor 挺符合需求的，搞过来算了。</p>
+<p>supervisor 的配置直接写成这样</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ini" data-lang="ini"><span style="color:#66d9ef">[program:web-app]</span>
+<span style="color:#a6e22e">user</span>      <span style="color:#f92672">=</span> <span style="color:#e6db74">&lt;username&gt;</span>
+<span style="color:#a6e22e">directory</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">/home/&lt;username&gt;/sites/xxx.com/current</span>
+<span style="color:#a6e22e">command</span>   <span style="color:#f92672">=</span> <span style="color:#e6db74">bundle exec puma -C /home/&lt;username&gt;/sites/xxx.com/current/config/puma.rb</span>
+</code></pre></div><p>本来想的挺简单，结果一跑哎我靠不运行。忽然想到又存在一个 rvm 这破玩意儿。因为是安装到当前的用户，所以以 root 身份运行的 supervisor 找不到也是可以理解的。
+直接写一个绝对路径引用 rvm 中的 Ruby 好像也不行，因为还存在 bundler 查找 gem 的问题。</p>
+<p>查了一下 bundler 和 rvm 的文档，看来似乎用 alias 就搞定了。</p>
+<p>如果你没有用 <code>default</code> 的版本，那就先创建一个 <code>alias</code> 。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">~# rvm alias my-app-ruby-rev ruby-2.2.1
+</code></pre></div><p>这时候就可以通过调用 <code>/home/&lt;username&gt;/.rvm/wrapper/my-app-ruby-rev/bundle</code> 文件来通过 rvm 自动选择需要的版本了。</p>
+<p>再修改一下 supervisor 的配置：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ini" data-lang="ini"><span style="color:#66d9ef">[program:web-app]</span>
+<span style="color:#a6e22e">user</span>      <span style="color:#f92672">=</span> <span style="color:#e6db74">web-app</span>
+<span style="color:#a6e22e">directory</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">/absolute/path/to/app/current</span>
+<span style="color:#a6e22e">command</span>   <span style="color:#f92672">=</span> <span style="color:#e6db74">/home/&lt;username&gt;/.rvm/wrapper/my-app-ruby-rev/bundle exec puma -C ./relative/path/to/config</span>
+</code></pre></div><p>艾玛，终于跑起来了，整个人都觉得生活充满了希望。</p>
+<p>话说这么一搞， capistrano 里的 deploy.rb 又可以简化一大片了， stop, start 的部分都可以删掉，只留下 restart 的部分，直接给 puma 的进程发送 SIGUSR2 就OK了。
+实测了一下效果不错，异常稳定啊。</p>
+<p>美洲狮目前来说终于被驯服了。</p>
+</div>
+</article>
+
+
+
+    <div id="build-info">Last build hash: d278eb4</div>
+  </main>
+</div>
+</body>
+</html>
