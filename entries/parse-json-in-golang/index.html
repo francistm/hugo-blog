@@ -120,18 +120,18 @@
 }
 </code></pre></div><p>这简直是坑啊，代码长到变态，而且遇到传入的JSON缺少某个参数的时候程序就会出错，而编译器无法检查到这种错误。看来稳妥起见还是用<code>struct</code>的方法把。</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">CmdData</span> <span style="color:#66d9ef">struct</span> {
-  <span style="color:#a6e22e">Cmd</span> <span style="color:#66d9ef">string</span> <span style="color:#e6db74">`</span><span style="color:#e6db74">json:&#34;command&#34;</span><span style="color:#e6db74">`</span>
+  <span style="color:#a6e22e">Cmd</span> <span style="color:#66d9ef">string</span> <span style="color:#e6db74">`json:&#34;command&#34;`</span>
   <span style="color:#a6e22e">Properties</span> []<span style="color:#66d9ef">struct</span> {
-    <span style="color:#a6e22e">Id</span> <span style="color:#66d9ef">string</span> <span style="color:#e6db74">`</span><span style="color:#e6db74">json:&#34;id&#34;</span><span style="color:#e6db74">`</span>
+    <span style="color:#a6e22e">Id</span> <span style="color:#66d9ef">string</span> <span style="color:#e6db74">`json:&#34;id&#34;`</span>
     <span style="color:#a6e22e">Relays</span> []<span style="color:#66d9ef">struct</span> {
-      <span style="color:#a6e22e">Id</span> <span style="color:#66d9ef">string</span> <span style="color:#e6db74">`</span><span style="color:#e6db74">json:&#34;id&#34;</span><span style="color:#e6db74">`</span>
-      <span style="color:#a6e22e">Ip</span> <span style="color:#66d9ef">string</span> <span style="color:#e6db74">`</span><span style="color:#e6db74">json:&#34;ip&#34;</span><span style="color:#e6db74">`</span>
+      <span style="color:#a6e22e">Id</span> <span style="color:#66d9ef">string</span> <span style="color:#e6db74">`json:&#34;id&#34;`</span>
+      <span style="color:#a6e22e">Ip</span> <span style="color:#66d9ef">string</span> <span style="color:#e6db74">`json:&#34;ip&#34;`</span>
       <span style="color:#a6e22e">Nodes</span> []<span style="color:#66d9ef">struct</span> {
-        <span style="color:#a6e22e">Id</span> <span style="color:#66d9ef">string</span> <span style="color:#e6db74">`</span><span style="color:#e6db74">json:&#34;id&#34;</span><span style="color:#e6db74">`</span>
-        <span style="color:#a6e22e">Desc</span> <span style="color:#66d9ef">string</span> <span style="color:#e6db74">`</span><span style="color:#e6db74">json:&#34;desc&#34;</span><span style="color:#e6db74">`</span>
-      } <span style="color:#e6db74">`</span><span style="color:#e6db74">json:&#34;nodes&#34;</span><span style="color:#e6db74">`</span>
-    } <span style="color:#e6db74">`</span><span style="color:#e6db74">json:&#34;relays&#34;</span><span style="color:#e6db74">`</span>
-  } <span style="color:#e6db74">`</span><span style="color:#e6db74">json:&#34;properties&#34;</span><span style="color:#e6db74">`</span>
+        <span style="color:#a6e22e">Id</span> <span style="color:#66d9ef">string</span> <span style="color:#e6db74">`json:&#34;id&#34;`</span>
+        <span style="color:#a6e22e">Desc</span> <span style="color:#66d9ef">string</span> <span style="color:#e6db74">`json:&#34;desc&#34;`</span>
+      } <span style="color:#e6db74">`json:&#34;nodes&#34;`</span>
+    } <span style="color:#e6db74">`json:&#34;relays&#34;`</span>
+  } <span style="color:#e6db74">`json:&#34;properties&#34;`</span>
 }
 
  
