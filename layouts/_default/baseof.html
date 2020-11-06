@@ -7,7 +7,7 @@
   </title>
   <meta name="X-UA-Compatible" content="IE=edge">
   <meta name="renderer" content="webkit">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
   {{ range .AlternativeOutputFormats }}
   <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" title="{{ .Name }}" href="{{ .Permalink | safeURL }}">

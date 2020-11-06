@@ -4,8 +4,8 @@
   <h1 class="page-title">{{ .Title }}</h1>
 
   <div class="page-meta">
-    发表于 {{ .PublishDate.Format "2006-01-02 15:04:05" }}，
-    最后更新 {{ .Lastmod.Format "2006-01-02 15:04:05" }}
+    <span>发布于 {{ .PublishDate.Format "2006-01-02 15:04:05" }}</span>,
+    <span>最后更新 {{ .Lastmod.Format "2006-01-02 15:04:05" }}</span>
   </div>
 
   <div class="content markdown">{{ .Content }}</div>

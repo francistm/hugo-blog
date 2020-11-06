@@ -6,8 +6,8 @@
     {{ range .Pages }}
     <li>
       <a href="{{ .Permalink }}">
-        <div>{{ .Title }}</div>
-        <div>{{ .Date.Format "January 2, 2006" }}</div>
+        <div class="title">{{ .Title }}</div>
+        <div class="meta">发布时间：{{ .Date.Format "2006/01/02" }}</div>
       </a>
     </li>
     {{ end }}

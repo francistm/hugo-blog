@@ -1,4 +1,6 @@
 *.sw[op]
+.DS_Store
 .idea
+
 public
 resources/_gen
