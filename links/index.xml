@@ -5,10 +5,6 @@
     <link>https://blog.francistm.com/links/</link>
     <description>Recent content in 友情链接 on Francis&#39; Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-CN</language>
-    
-	<atom:link href="https://blog.francistm.com/links/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>zh-CN</language><atom:link href="https://blog.francistm.com/links/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
