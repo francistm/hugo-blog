@@ -20,7 +20,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
       
-      - name: Install hugo binary executable
+      - name: Install hugo executable binary
         run: |
           wget https://github.com/gohugoio/hugo/releases/download/v0.78.2/hugo_0.78.2_Linux-64bit.deb -O /tmp/hugo.deb
           sudo dpkg -i /tmp/hugo.deb
@@ -28,3 +28,12 @@ jobs:
       - name: Compile and push
         run: |
           hugo version
+          rm -rf public
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git fetch origin/gh-pages
+          git worktree add -B gh-pages public origin/gh-pages
+
+          hugo
+
+          cd public && git add --all && git commit -m 'publish from github actions' && git push origin gh-pages
