@@ -19,12 +19,12 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      
+
       - name: Install hugo executable binary
         run: |
-          wget https://github.com/gohugoio/hugo/releases/download/v0.78.2/hugo_0.78.2_Linux-64bit.deb -O /tmp/hugo.deb
+          wget https://github.com/gohugoio/hugo/releases/download/v0.78.2/hugo_extended_0.78.2_Linux-64bit.deb -O /tmp/hugo.deb
           sudo dpkg -i /tmp/hugo.deb
-      
+
       - name: Compile and push
         run: |
           hugo version
