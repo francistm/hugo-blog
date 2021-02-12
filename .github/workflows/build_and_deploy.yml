@@ -22,7 +22,7 @@ jobs:
 
       - name: Install hugo executable binary
         run: |
-          wget https://github.com/gohugoio/hugo/releases/download/v0.78.2/hugo_extended_0.78.2_Linux-64bit.deb -O /tmp/hugo.deb
+          wget https://github.com/gohugoio/hugo/releases/download/v0.80.0/hugo_extended_0.80.0_Linux-64bit.deb -O /tmp/hugo.deb
           sudo dpkg -i /tmp/hugo.deb
           hugo version
 
