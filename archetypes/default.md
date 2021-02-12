@@ -1,6 +1,9 @@
----
-title: "{{ replace .Name "-" " " | title }}"
-date: {{ .Date }}
-draft: true
----
++++
+title = "{{ replace .Name "-" " " | title }}"
+slug = "{{ .Name | urlize }}"
+date = {{ .Date }}
+lastmod = {{ .Date }}
+publishDate = {{ .Date }}
+draft = true
++++
 
