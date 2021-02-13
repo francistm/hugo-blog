@@ -4,7 +4,6 @@ slug = "update-huanan-x99-f8-bios-on-win64"
 date = 2021-02-13T14:00:00+08:00
 lastmod = 2021-02-13T14:00:00+08:00
 publishDate = 2021-02-13T14:00:00+08:00
-draft = true
 +++
 
 一年前因为种种原因，购入的华南金牌 X99-F8 + E5-2690v3，替换了用了也不是很久的 ASUS B150 + i5 6500。
