@@ -3,5 +3,8 @@
 ## Url
 <https://blog.francistm.com>
 
-## Deployment
-<https://gohugo.io>
+## Preview at local
+`hugo serve -D`
+
+## Add new item
+`hugo new -k entry entries/<slug>/index.md`
