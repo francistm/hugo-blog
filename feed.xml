@@ -6,7 +6,16 @@
     <description>Recent content in 首页 on Francis&#39; Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 06 Nov 2020 10:44:26 +0800</lastBuildDate><atom:link href="https://blog.francistm.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 13 Feb 2021 14:00:00 +0800</lastBuildDate><atom:link href="https://blog.francistm.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>华南金牌 X99 F8 BIOS 升级</title>
+      <link>https://blog.francistm.com/entries/update-huanan-x99-f8-bios-on-win64/</link>
+      <pubDate>Sat, 13 Feb 2021 14:00:00 +0800</pubDate>
+      
+      <guid>https://blog.francistm.com/entries/update-huanan-x99-f8-bios-on-win64/</guid>
+      <description>一年前因为种种原因，购入的华南金牌 X99-F8 + E5-2690v3，替换了用了也不是很久的 ASUS B150 + i5 6500。 换了之后总的来讲，只在少数场景，如同时运行</description>
+    </item>
+    
     <item>
       <title>2020年之多事之秋</title>
       <link>https://blog.francistm.com/entries/an-eventful-2020/</link>
