@@ -1,6 +1,11 @@
+# Editor & IDE
 *.sw[op]
-.DS_Store
 .idea
+.vscode
 
+# System
+.DS_Store
+
+# Release
 public
 resources/_gen
