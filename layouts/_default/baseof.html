@@ -9,13 +9,14 @@
   <meta name="renderer" content="webkit">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  {{ range .AlternativeOutputFormats }}
+  <link rel="canonical" href="{{ .Permalink }}">
+  {{- range .AlternativeOutputFormats }}
   <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" title="{{ .Name }}" href="{{ .Permalink | safeURL }}">
   {{ end }}
 
-  {{ $styles := resources.Get "sass/layout.sass" | toCSS | minify | fingerprint }}
-  <link rel="stylesheet" type="text/css" href="//cdn.staticfile.org/normalize/8.0.1/normalize.css" media="all">
-  <link rel="stylesheet" type="text/css" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}" media="all">
+  {{- $styles := resources.Get "sass/layout.sass" | toCSS | minify | fingerprint }}
+  <link rel="stylesheet" type="text/css" href="//cdn.staticfile.org/normalize/8.0.1/normalize.css" integrity="sha384-M86HUGbBFILBBZ9ykMAbT3nVb0+2C7yZlF8X2CiKNpDOQjKroMJqIeGZ/Le8N2Qp" crossorigin="anonymous" media="all">
+  <link rel="stylesheet" type="text/css" href="{{ $styles.Permalink }}" media="all">
 </head>
 <body>
 <div id="wrapper">
