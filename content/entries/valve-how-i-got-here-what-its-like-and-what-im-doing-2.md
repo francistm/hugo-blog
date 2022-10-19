@@ -6,7 +6,7 @@ lastmod = "2016-02-12T18:02:01+08:00"
 publishDate = "2016-02-12T18:02:01+08:00"
 +++
 
-接上一篇 [[翻译]维尔福：关于我在这的一切 (1)](http://blog.francistm.com/entries/valve-how-i-got-here-what-its-like-and-what-im-doing-1.html)
+接上一篇 [[翻译]维尔福：关于我在这的一切 (1)](https://blog.francistm.com/entries/valve-how-i-got-here-what-its-like-and-what-im-doing-1)
 
 ***
 

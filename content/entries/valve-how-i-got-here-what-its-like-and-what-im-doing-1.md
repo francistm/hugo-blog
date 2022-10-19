@@ -26,4 +26,4 @@ publishDate = "2016-02-12T18:01:34+08:00"
 
 我是在为一个惊喜。
 
-> 继续阅读 [[翻译]维尔福：关于我在这的一切 (2)](http://blog.francistm.com/entries/valve-how-i-got-here-what-its-like-and-what-im-doing-2.html)
+> 继续阅读 [[翻译]维尔福：关于我在这的一切 (2)](https://blog.francistm.com/entries/valve-how-i-got-here-what-its-like-and-what-im-doing-2)
