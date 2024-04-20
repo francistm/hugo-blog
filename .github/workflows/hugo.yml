@@ -31,7 +31,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           submodules: recursive
       - name: Setup Hugo
@@ -55,6 +55,9 @@ jobs:
         with:
           name: github-pages
           path: ./public
+          retention-days: 3
+          compression-level: 9
+          overwrite: true
 
   # Deployment job
   deploy:
