@@ -43,15 +43,20 @@ publishDate = 2024-04-21T10:01:11+08:00
    set interfaces ethernet eth0 vif 85 bridge-group bridge br85
    set interfaces switch switch0 vif 85 bridge-group bridge br85
    ```
-1. 设置 DNS 选项  
-   (这段代码完全是抄来的)
+1. 设置 DNS 选项
    ``` bash
-   set service dhcp-server global-parameters "option option-125 code 125 = string;"
    set service dhcp-server global-parameters "option option-55 code 55 = array of unsigned integer 16;"
+   set service dhcp-server global-parameters "option option-60 code 60 = string;"
+   set service dhcp-server global-parameters "option option-125 code 125 = string;"
 
-   set service dhcp-server shared-network-name LAN subnet 192.168.1.1/24 subnet-parameters "option option-125 00:00:00:00:1a:02:06:48:47:57:2d:43:54:0a:02:20:00:0b:02:00:55:0d:02:00:2e;"
-   set service dhcp-server shared-network-name LAN subnet 192.168.1.1/24 subnet-parameters "option option-55 3,6,58,59,125;"
+   set service dhcp-server shared-network-name LAN subnet 192.168.1.1/24 subnet-parameters "option option-55 3,6,58,59,60,125;"
+   set service dhcp-server shared-network-name LAN subnet 192.168.1.1/24 subnet-parameters "option option-60 00:00:01:00:02:03:43:50:45:03:0e:45:38:20:47:50:4f:4e:20:52:4f:55:54:45:52:04:03:31:2e:30;"
+   set service dhcp-server shared-network-name LAN subnet 192.168.1.1/24 subnet-parameters "option option-125 00:00:00:00:1b:02:06:48:47:57:2d:43:54:03:05:48:47:32:32:31:0a:02:20:00:0b:02:00:55:0d:02:00:2e;"
    ```
+
+   大概解释
+   - OPTION-55 的类型是 uint16 数组，值为 会返回的 DHCP OPTION 项；
+   - OPTION-60, OPTION-125 的类型是 string , 伪造光猫的Vendor信息；
 
 1. 开启 VLAN Aware  
    
