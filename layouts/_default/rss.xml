@@ -35,7 +35,13 @@
       <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
       <author>{{ .Site.Params.Author.email }} ({{ .Site.Params.Author.name }})</author>
       <guid>{{ .Permalink }}</guid>
-      <description>{{ .Summary | html }}</description>
+      <description>
+        {{ .Summary | html }}
+
+        {{ if .Truncated }}
+          <a href="{{ .Permalink }}">Read more...</a>
+        {{ end }}
+      </description>
       <content>{{ .Content | html }}</content>
     </item>
     {{ end }}
