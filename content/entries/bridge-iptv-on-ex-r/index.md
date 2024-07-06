@@ -79,5 +79,5 @@ publishDate = 2024-04-21T10:01:11+08:00
 
 
 ## 参考链接:
-1. <https://hi.pgx.me/2018/03/zte-f450g-config.html>
-1. <https://aray.cn/archives/14234> 
+1. [中兴光猫F450G v1.0配置 by 蜃雨腥风](https://web.archive.org/web/20240302085748/https://hi.pgx.me/2018/03/zte-f450g-config.html)
+1. [「IPTV」上海电信改桥接 IPTV设置小白教程（软路由/交换机VLAN设置）更新中](https://aray.cn/archives/14234)
