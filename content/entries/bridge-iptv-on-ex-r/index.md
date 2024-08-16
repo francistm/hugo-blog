@@ -19,15 +19,7 @@ publishDate = 2024-04-21T10:01:11+08:00
 
 网络结构没有其他分享的教程中那么复杂，光猫后只有 IPTV 机顶盒，WI-FI 等设备，没有下卦其他交换机。
 
-```
-光猫
- └─EX-R
-    ├─IPTV 机顶盒
-    └─Wi-Fi 路由(桥接)
-       ├─PC
-       ├─Laptop
-       └─Other Wifi client
-```
+![Network Topology](./network-topology.png)
 
 ## 开始干
 
