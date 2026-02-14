@@ -7,4 +7,4 @@
 `hugo serve -D`
 
 ## Add new item
-`hugo new -k entry entries/<slug>/index.md`
+`hugo new entries/<slug>`
