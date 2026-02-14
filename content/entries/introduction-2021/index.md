@@ -1,6 +1,6 @@
 +++
 title = "新年新气象 (6)"
-slug = "introduce-2021"
+slug = "introduction-2021"
 date = 2022-01-03T12:55:08+08:00
 lastmod = 2022-01-03T12:55:08+08:00
 publishDate = 2022-01-03T12:55:08+08:00

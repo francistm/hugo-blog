@@ -1,6 +1,6 @@
 +++
 date = "2020-02-02T00:00:00+08:00"
-slug = "introduct-2020"
+slug = "introduction-2020"
 title = "新年新气象 (5)"
 lastmod = "2020-02-02T19:46:20+08:00"
 publishDate = "2020-02-02T19:46:20+08:00"
@@ -20,7 +20,7 @@ publishDate = "2020-02-02T19:46:20+08:00"
 
 等了四年的死亡搁浅今年终于出来了，还得感谢公司王总的PS4，才终于体验到。白金杯虽说不是很难，但突然发现没有耐心一点点刷了。
 
-{{< figure src="/entries/introduct-2020/IMG_1033.JPG" >}}
+{{< figure src="/entries/introduction-2020/IMG_1033.JPG" >}}
 
 ## 其他
 

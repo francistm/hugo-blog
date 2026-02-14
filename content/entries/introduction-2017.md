@@ -1,6 +1,6 @@
 +++
 date = "2017-01-01T00:00:00+08:00"
-slug = "introduct-2017"
+slug = "introduction-2017"
 title = "新年新气象 (2)"
 lastmod = "2017-01-02T17:40:02+08:00"
 publishDate = "2017-01-02T17:06:31+08:00"
@@ -26,5 +26,5 @@ publishDate = "2017-01-02T17:06:31+08:00"
 当然也感受到了塔城人民的酒量（还好我已戒酒才幸免于难）
 ![](http://7xqvtj.com1.z0.glb.clouddn.com/uploads/files/284/1443BAD6-6BD1-4EBF-9B74-A38633C32CAB.JPG?imageMogr/thumbnail/750x%3E)
 
-2017年也不敢像去年一样展望个什么了，混口饭吃就知足了 (- -!)  
+2017年也不敢像去年一样展望个什么了，混口饭吃就知足了 (- -!)
 总的来说就是一句话，不要怂就是干！

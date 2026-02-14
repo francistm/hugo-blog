@@ -1,6 +1,6 @@
 +++
 date = "2018-12-31T00:00:00+08:00"
-slug = "introduct-2019"
+slug = "introduction-2019"
 title = "新年新气象 (4)"
 lastmod = "2019-02-16T02:26:48+08:00"
 publishDate = "2019-02-16T02:20:38+08:00"
